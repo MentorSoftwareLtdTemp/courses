@@ -1,4 +1,4 @@
 courses
 =======
 
-Source code for MentorSoftware Ltd courses.
+Source code for MentorSoftware Ltd. courses.
