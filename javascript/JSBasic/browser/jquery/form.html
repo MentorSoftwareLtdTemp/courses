@@ -1,0 +1,67 @@
+<html>
+	<head>
+		<meta charset="utf-8">
+		<title>Demo</title>
+		<link href="style.css" rel="stylesheet" type="text/css">
+		<script src="jquery-2.1.0.js"></script>
+        <script>
+            $(document).ready(function() {
+                $( "#validate" ).click(
+                        function()
+                        {
+                            $("#form1").trigger('submit');
+                        }
+                );
+                $('.error').hide();
+                $( "#form1" ).submit(function( event ) {
+                    var data = $('#firstName').val();
+                    if (!data) {
+                        $('#errFN').show();
+                        event.preventDefault();
+                    } else {
+                        $('errFN').hide();
+                    }
+
+
+                    event.preventDefault();
+                });
+
+                $("input").focus(function(){
+                    $(this).css("background-color","#cccccc");
+                });
+                $("input").blur(function(){
+                    $(this).css("background-color","#ffffff");
+                });
+                $( "input" ).select(function() {
+                    $( "#message" ).text( "Something was selected" ).show().fadeOut( 3000 );
+                });
+                $( "input" ).change(function() {
+                    $( "#message" ).text( "Something was changed." ).show().fadeOut( 3000 );
+                });
+
+
+
+            });
+
+        </script>
+	</head>
+	<body>
+		<form id="form1" method="post" action="">
+			<div>
+				<span class="label">FirstName *</span>
+				<input id="firstName" type="text" class="infobox" name="userid"
+				/>
+				<span id="errFN" class="error"> This field cannot be blank</span>
+                <br/>
+                <span class="label">LastName *</span>
+                <input type="text" value="Field 2">
+                <span id="errLN" class="error"> This field cannot be blank</span>
+
+            </div>
+			<input class="submit" type="submit" value="Submit">
+		</form>
+        <button id="validate">Validate</button>
+        <div id="message"></div>
+	</body>
+
+</html>

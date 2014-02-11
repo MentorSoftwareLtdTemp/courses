@@ -1,0 +1,46 @@
+<!DOCTYPE html>
+<html>
+<head>
+<script src="../jquery-2.1.0.js"></script>
+    <script>
+        function request(fileName, id1, isGet)
+        {
+              $.get(fileName, function(result){
+                $(id1).html(result);
+              }, "html");
+              //$(id1).load(fileName);
+             //2
+            $(id1).load(fileName);
+
+        }
+
+        $(document).ready(function()
+        {
+            $("#id1").click(function(){
+                request("content.txt","#text");
+            });
+
+            $("#id2").click(function(){
+                request("content.html","#html");
+            });
+
+            $("#id3").click(function(){
+                request("content.xml","#xml");
+            });
+
+        });
+     </script>
+</head>
+<body>
+
+<div><h2 id="text">Let AJAX change this text</h2></div>
+<button id="id1">Change Content</button>
+
+<div><h2 id="html">Let AJAX change this text</h2></div>
+<button id="id2">Change Content</button>
+
+<div><h2 id="xml">Let AJAX change this text</h2></div>
+<button id="id3">Change Content</button>
+
+</body>
+</html>

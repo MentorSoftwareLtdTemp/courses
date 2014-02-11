@@ -1,0 +1,21 @@
+{>"layouts/master" /}
+
+{<body}
+    <div clas="row">
+        <div class="col-lg-12 center-block">
+            <h1>{@pre type="content" key="greeting"/}</h1>
+        </div>
+    <div class="col-lg-12 center-block">
+        <table id="MyGrid" class="table table-hover table-bordered table-condensed datagrid">
+            <thead>
+                <tr>
+                    <th>
+                        <span class="datagrid-header-title">Example Data Sample</span>
+
+                    </th>
+                </tr>
+            </thead>
+        </table>
+        </div><!-- /example -->
+    </div>
+{/body}

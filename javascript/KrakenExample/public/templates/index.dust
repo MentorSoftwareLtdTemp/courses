@@ -1,0 +1,23 @@
+{>"layouts/master" /}
+
+{<body}
+<div clas="row">
+    <div class="col-lg-12 center-block">
+        <h1>{@pre type="content" key="greeting"/}</h1>
+        <div class="well checkbox-example">
+            <label class="checkbox checkbox-custom"><input type="checkbox" checked="checked" id="myCheckbox"><i
+                    class="checkbox"></i>Checked Enabled</label>
+            <label class="checkbox checkbox-custom"><input type="checkbox"><i class="checkbox"></i>Unchecked Enabled</label>
+            <label class="checkbox checkbox-custom"><input type="checkbox" checked="checked" disabled="disabled"><i
+                    class="checkbox"></i>Checked Disabled</label>
+            <label class="checkbox checkbox-custom"><input type="checkbox" disabled="disabled"><i
+                    class="checkbox"></i>Unchecked Disabled</label>
+            <input type="button" class="btn" id="checkbox-toggle" value="toggle">
+            <input type="button" class="btn" id="checkbox-enable" value="enable">
+            <input type="button" class="btn" id="checkbox-disable" value="disable">
+        </div>
+    </div>
+
+
+</div>
+{/body}

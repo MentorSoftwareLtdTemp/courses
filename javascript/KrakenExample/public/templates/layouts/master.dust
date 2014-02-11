@@ -1,0 +1,72 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+    <meta name="description" content="">
+    <meta name="author" content="">
+
+    <title>{+title /}</title>
+
+    <link rel="stylesheet" href="components/bootstrap/css/bootstrap.min.css" />
+    <link rel="stylesheet" href="components/bootstrap/css/bootswatch.min.css" />
+
+    <link rel="stylesheet" href="components/font-awesome/css/font-awesome.min.css">
+    <link href="//www.fuelcdn.com/fuelux/2.5.2/css/fuelux.min.css" rel="stylesheet" type="text/css">
+    <link href="//www.fuelcdn.com/fuelux/2.5.2/css/fuelux-responsive.css" rel="stylesheet" type="text/css">
+
+    <!-- SB Admin CSS - Include with every page -->
+    <link href="css/sb-admin.css" rel="stylesheet">
+
+
+    <link rel="stylesheet" href="css/app.css" />
+</head>
+<body>
+<div id="wrapper">
+
+<div class="navbar navbar-default navbar-fixed-top">
+    <div class="container">
+        <div class="navbar-header">
+            <a href="../" class="navbar-brand">Node Tutorial</a>
+            <button class="navbar-toggle" type="button" data-toggle="collapse" data-target="#navbar-main">
+                <span class="icon-bar"></span>
+                <span class="icon-bar"></span>
+                <span class="icon-bar"></span>
+            </button>
+        </div>
+        <div class="navbar-collapse collapse" id="navbar-main">
+            <ul class="nav navbar-nav">
+              {?user}
+                <li><a id="" href="/dashboard">Dashboard</a></li>
+                <li><a href="/postList">Sth2</a></li>
+              {/user}
+                <li>
+                    <a id="menuHelp" href="/help/">Help</a>
+                </li>
+
+
+            </ul>
+
+            <ul class="nav navbar-nav navbar-right">
+                <li><a href="http://www.mentorsoftwareltd.com/" target="_blank">MentorSoftware</a></li>
+                {?user}
+                    <li><a href="/logout">Logout {user.name}</a></li>
+                {:else}
+                    <li><a href="/register">Register</a></li>
+                    <li><a href="/login">Login</a></li>
+                {/user}
+            </ul>
+
+        </div>
+    </div>
+</div>
+
+
+<div class="container-fluid">
+    {+body /}
+</div>
+</div>
+<script data-main="js/main.js" src="js/lib/requirejs/require.js"></script>
+</body>
+</html>

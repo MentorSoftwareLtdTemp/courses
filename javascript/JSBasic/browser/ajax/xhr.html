@@ -1,0 +1,65 @@
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Strict//EN" "http://www.w3.org/TR/xhtml1/DTD/xhtml1-strict.dtd">
+<html xmlns="http://www.w3.org/1999/xhtml" xml:lang="en"><head>
+<meta http-equiv="content-type" content="text/html; charset=ISO-8859-1">
+  <title>XMLHttpRequest test</title>
+  <style type="text/css">
+    div {margin: 10px; padding: 10px; border: 1px solid blue;}
+  </style>
+</head>
+
+<body>
+
+<div><h2 id="text">Let AJAX change this text</h2></div>
+<button id="id1">Change Content</button>
+
+<div><h2 id="html">Let AJAX change this text</h2></div>
+<button id="id2">Change Content</button>
+
+<div><h2 id="xml">Let AJAX change this text</h2></div>
+<button id="id3">Change Content</button>
+
+
+<script>
+    function request(url, callback) {
+        var xhr = new XMLHttpRequest();
+        xhr.onreadystatechange = (function(myxhr) {
+            return function() {
+                callback(myxhr);
+            }
+        })(xhr);
+        xhr.open('GET', url, true);
+        xhr.send('');
+    }
+
+
+    var button1=document.getElementById('id1');
+    if(button1.addEventListener){
+        button1.addEventListener('click', function()
+        {
+            request('content.txt', function(o) {
+                document.getElementById('text').innerHTML = o.responseText});
+        });
+    } else if(button1.attachEvent){ // IE < 9 :(
+        button1.attachEvent('onclick', function() { alert("alert");});
+    }
+
+    var button2=document.getElementById('id2');
+    button2.addEventListener('click', function()
+    {
+        request('content.html', function(o) {
+            document.getElementById('html').innerHTML = o.responseText;
+        });
+    });
+
+    var button3=document.getElementById('id3');
+    button3.addEventListener('click', function()
+    {
+        request('content.xml', function(o) {
+            document.getElementById('xml').innerHTML = o.responseXML.getElementsByTagName('root')[0].firstChild.nodeValue;
+        });
+    });
+
+
+</script>
+</body>
+</html>
