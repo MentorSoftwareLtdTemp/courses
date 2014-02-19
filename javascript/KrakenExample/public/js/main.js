@@ -5,40 +5,55 @@ requirejs.config({
 
     baseUrl : 'js',
     paths: {
+        //libs
         'jquery' : 'lib/jquery/jquery',
         'bootstrap' : 'lib/bootstrap/bootstrap',
-        'backbone' : 'lib/backbone/backbone',
         'underscore' : 'lib/underscore/underscore',
-        'login': 'app/login',
+        'backbone' : 'lib/backbone/backbone',
+        'fuelux' : '../components/fuelux/all',
+        'moment' : 'lib/moment/moment',
+        'metisMenu'  : 'lib/metisMenu/jquery.metisMenu',
+        'jqBootstrapValidation' : 'lib/jqBootstrapValidation/jqBootstrapValidation',
+        //Views
+        'loginView': 'app/views/loginView',
+        'registerView': 'app/views/registerView',
         'index' : 'app/index',
-        'fuelux' : '../components/fuelux',
-        'moment' : 'lib/moment/moment'
+        'app' : 'app/app'
+
+        //'dust' : 'lib/dustjs-linkedin/dust-core'
+        //templates
+        //'loginDialog' : '../templates/LoginDialog'
+
+    },
+    shim: {
+        'bootstrap': {deps: ['jquery'], exports: '$.fn.modal'},
+        'metisMenu': {deps: ['jquery']},
+        'jqBootstrapValidation' : {deps: ['jquery']},
+        'underscore' : {exports: '_'},
+        'backbone' :{deps: ['underscore','jquery']}
+        //'dust' : {exports: "dust"}
+        //templates
+        //'loginDialog' : {deps : ['dust'], exports : 'LoginDialog'}
     }
+
 });
 
+//TODO: metisMenu - remove require
+//TODO: Add to grunt copy all neede components
+//TODO: Learn css in new project using bootstrap.
 
-
-/*require(['jquery','login','index','fuelux/all','bootstrap'],
-    //,'jquery','login','bootstrap'
-    function ($, login, index, fuelux) {
-
-        var app = {
-            initialize: function () {
-                app.login = login;
-                login.init();
-            }
-        };
-
+require(['jquery','fuelux','underscore','backbone','app','metisMenu','bootstrap'],
+    function ($, fuelux,_,backbone,app) {
+        //require('login');
         $( document ).ready(function() {
-            app.initialize();
-            app.login.showLoginDialog();
-            console.log('Loaded',fuelux, $, login);
+            console.log('Loaded',fuelux, $);
+            $('#side-menu').metisMenu();
 
         });
-        $(document)
+
 });
 
-*/
+
 // Start loading the main app file. Put all of
 // your application logic in there.
-requirejs(['app/app']);
+//requirejs(['app/app']);

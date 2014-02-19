@@ -7,7 +7,8 @@
 //
 
 #import <UIKit/UIKit.h>
+#import "RNFrostedSidebar.h"
 
-@interface MSMainTableViewController : UITableViewController
+@interface MSMainTableViewController : UITableViewController<UIActionSheetDelegate, RNFrostedSidebarDelegate>
 
 @end

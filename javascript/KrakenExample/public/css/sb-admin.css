@@ -2,15 +2,16 @@
 
 /* ------------------------------- */
 
- body {
-    background-color: #f8f8f8;
+body {
+    /*background-color: #f8f8f8;*/
+    padding-top: 0px;
 }
 
 /* Wrappers */
 
 /* ------------------------------- */
 
- #wrapper {
+#wrapper {
     width: 100%;
 }
 
@@ -20,10 +21,10 @@
     background-color: #fff;
 }
 
-@media(min-width:768px) {
+/*@media(min-width:768px) {
     #page-wrapper {
         position: inherit;
-        margin: 0 0 0 250px;
+        margin: 0 0 0 20px;
         padding: 0 30px;
         min-height: 1300px;
         border-left: 1px solid #e7e7e7;
@@ -32,7 +33,7 @@
 
 .navbar-static-side ul li {
     border-bottom: 1px solid #e7e7e7;
-}
+}*/
 
 /* Navigation */
 
@@ -44,13 +45,14 @@
     display: inline-block;
 }
 
-.navbar-top-links li:last-child {
+/*.navbar-top-links li:last-child {
     margin-right: 15px;
 }
 
 .navbar-top-links li a {
     padding: 15px;
     min-height: 50px;
+    color: #ffffff;
 }
 
 .navbar-top-links .dropdown-menu li {
@@ -94,7 +96,7 @@
     left: auto;
 }
 
-/* Sidebar Menu Styles */
+/* Sidebar Menu Styles
 
  .sidebar-search {
     padding: 15px;
@@ -139,9 +141,8 @@
     }
 }
 
-/* Buttons */
+/* Buttons
 
-/* ------------------------------- */
 
  .btn-outline {
     color: inherit;
@@ -179,9 +180,8 @@
 
 /* Pages */
 
-/* ------------------------------- */
 
-/* Dashboard Chat */
+/* Dashboard Chat
 
  .chat {
     margin: 0;
@@ -218,13 +218,13 @@
     overflow-y: scroll;
 }
 
-/* Login Page */
+/* Login Page
 
  .login-panel {
     margin-top: 25%;
 }
 
-/* Flot Chart Containers */
+/* Flot Chart Containers
 
  .flot-chart {
     display: block;
@@ -236,7 +236,7 @@
     height: 100%;
 }
 
-/* DataTables Overrides */
+/* DataTables Overrides
 
  table.dataTable thead .sorting,
 table.dataTable thead .sorting_asc:after,
@@ -265,7 +265,7 @@ table.dataTable thead .sorting:after {
     color: rgba(50,50,50,.5);
 }
 
-/* Circle Buttons */
+/* Circle Buttons
 
  .btn-circle {
     width: 30px;
@@ -305,3 +305,4 @@ table.dataTable thead .sorting:after {
 .show-grid {
     margin: 15px 0;
 }
+*/

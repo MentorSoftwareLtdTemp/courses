@@ -7,7 +7,14 @@
 //
 
 #import <Foundation/Foundation.h>
+#import "Lockbox.h"
 
 @interface MSKeyChain : NSObject
+
++(MSKeyChain *) sharedMSKeyChain;
+@property BOOL isPasscodeInKeyChain;
+
+
+
 
 @end

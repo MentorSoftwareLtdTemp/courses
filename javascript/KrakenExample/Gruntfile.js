@@ -4,6 +4,7 @@
 module.exports = function (grunt) {
 
     grunt.initConfig({
+
         jshint: {
             files: ['controllers/**/*.js', 'lib/**/*.js', 'models/**/*.js'],
             options: {
@@ -48,6 +49,7 @@ module.exports = function (grunt) {
                         dest: '.build/templates',
                         ext: '.js'
                     }
+
                 ],
                 options: {
                     fullname: function (filepath) {
@@ -55,7 +57,6 @@ module.exports = function (grunt) {
                             name = path.basename(filepath, '.dust'),
                             parts = filepath.split(path.sep),
                             fullname = parts.slice(3, -1).concat(name);
-
                         return fullname.join(path.sep);
                     }
                 }
@@ -102,7 +103,10 @@ module.exports = function (grunt) {
                     'requirejs/require.js': 'requirejs/require.js',
                     //'bootstrap/bootstrap.js': 'bootstrap/dist/js/bootstrap.js',
                     'backbone/backbone.js'  : 'backbone/backbone.js',
-                    'underscore/underscore.js'  : 'underscore/underscore.js'
+                    'underscore/underscore.js'  : 'underscore/underscore.js',
+                    'dustjs-linkedin/dust-core.js' : 'dustjs-linkedin/dist/dust-core.js',
+                    'jquery/jquery.form.js' : 'jquery-validation/lib/jquery.form.js',
+                    'jquery/jquery.validate.js' : 'jquery-validation/jquery.validate.js'
 
 
                 }
@@ -124,7 +128,9 @@ module.exports = function (grunt) {
                 }
             }
 
-        }
+        },
+
+
     });
     grunt.loadNpmTasks('grunt-bower-task');
     grunt.loadNpmTasks('grunt-contrib-less');
@@ -135,7 +141,9 @@ module.exports = function (grunt) {
     grunt.loadNpmTasks('grunt-dustjs');
     grunt.loadNpmTasks('grunt-copy-to');
     grunt.loadNpmTasks('grunt-bowercopy');
+    grunt.loadNpmTasks('grunt-dust-require');
     grunt.loadTasks('./node_modules/makara/tasks/');
+
 
     grunt.registerTask('i18n', ['clean', 'makara', 'dustjs', 'clean:tmp']);
     grunt.registerTask('build', ['jshint', 'less', 'requirejs',  'copyto', 'i18n']);

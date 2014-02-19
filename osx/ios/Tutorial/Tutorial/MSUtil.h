@@ -9,5 +9,5 @@
 #import <Foundation/Foundation.h>
 
 @interface MSUtil : NSObject
-
+    + (BOOL)isEmptyString:(NSString *)string;
 @end

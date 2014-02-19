@@ -7,12 +7,39 @@
 //
 
 #import "MSMainTableViewController.h"
+#import "MSPascodeViewController.h"
+#import "Lockbox.h"
 
 @interface MSMainTableViewController ()
-
+    @property (nonatomic, strong) NSMutableIndexSet *optionIndices;
+    @property (strong, nonatomic) void(^tapHandler)();
+    -(IBAction)buttonTapped;
 @end
 
 @implementation MSMainTableViewController
+
+- (IBAction)showMenu:(id)sender {
+    NSArray *images = @[
+                        [UIImage imageNamed:@"key"],
+                        [UIImage imageNamed:@"plus"]];
+
+    NSArray *colors = @[
+//                        [UIColor clearColor]];
+                    [UIColor colorWithRed:250/255.f green:105/255.f blue:0/255.f alpha:1],
+                    [UIColor colorWithRed:250/255.f green:105/255.f blue:0/255.f alpha:1]];
+
+
+    RNFrostedSidebar *callout = [[RNFrostedSidebar alloc] initWithImages:images selectedIndices:Nil borderColors:colors];
+
+    //RNFrostedSidebar *callout = [[RNFrostedSidebar alloc] initWithImages:images];
+    callout.delegate = self;
+    callout.itemBackgroundColor=[UIColor colorWithWhite:1.0 alpha:0.00];
+    //    callout.showFromRight = YES;
+    [callout show];
+  
+    
+}
+
 
 - (id)initWithStyle:(UITableViewStyle)style
 {
@@ -26,6 +53,11 @@
 - (void)viewDidLoad
 {
     [super viewDidLoad];
+    UIBarButtonItem *itemAdd = [[UIBarButtonItem alloc] initWithBarButtonSystemItem:UIBarButtonSystemItemAdd target:self action:@selector(showMenuSheetAdd:)];
+    [self setToolbarItems:[NSArray arrayWithObjects:itemAdd, nil] animated: TRUE];
+    self.wantsFullScreenLayout = YES;
+    self.optionIndices = [NSMutableIndexSet indexSetWithIndex:1];
+   
 
     // Uncomment the following line to preserve selection between presentations.
     // self.clearsSelectionOnViewWillAppear = NO;
@@ -33,6 +65,52 @@
     // Uncomment the following line to display an Edit button in the navigation bar for this view controller.
     // self.navigationItem.rightBarButtonItem = self.editButtonItem;
 }
+
+#pragma mark - RNFrostedSidebarDelegate
+
+- (void)sidebar:(RNFrostedSidebar *)sidebar didTapItemAtIndex:(NSUInteger)index {
+    NSLog(@"Tapped item at index %i",index);
+    if (index == 0) {
+        [sidebar dismissAnimated:YES completion:^(BOOL finished) {
+            if (finished) {
+                UIStoryboard *storyboard = [UIStoryboard storyboardWithName:@"Main" bundle:nil];
+                MSPascodeViewController *viewController = (MSPascodeViewController *)[storyboard instantiateViewControllerWithIdentifier:@"MSPasscodeViewController"];
+                self.navigationController.modalPresentationStyle = UIModalPresentationFormSheet;
+                viewController.mode=MSPasscodeModeChange;
+                [self.navigationController pushViewController:viewController animated:YES ];
+            }
+        }];
+
+    }
+    //}
+}
+
+- (void)sidebar:(RNFrostedSidebar *)sidebar didEnable:(BOOL)itemEnabled itemAtIndex:(NSUInteger)index {
+    if (itemEnabled) {
+        [self.optionIndices addIndex:index];
+    }
+    else {
+        [self.optionIndices removeIndex:index];
+    }
+}
+
+
+
+- (void)viewDidAppear:(BOOL)animated
+{
+    [super viewDidAppear:animated];
+    //[self.navigationController.toolbar setBackgroundColor:[UIColor colorWithWhite:1.0 alpha:0.1f]];
+    self.navigationController.toolbar.barStyle=UIBarStyleDefault;
+    [self.navigationController.toolbar setBackgroundColor:[UIColor clearColor]];
+    //[self.navigationController.toolbar setTranslucent:YES];
+    [self.navigationController.toolbar setAlpha:0.1f];
+    self.navigationController.toolbar.barTintColor = [UIColor colorWithWhite:1.0 alpha:0.1f];
+
+    [self.navigationController setToolbarHidden:NO animated:TRUE];
+    
+    
+}
+
 
 - (void)didReceiveMemoryWarning
 {
@@ -44,28 +122,22 @@
 
 - (NSInteger)numberOfSectionsInTableView:(UITableView *)tableView
 {
-#warning Potentially incomplete method implementation.
+//#warning Potentially incomplete method implementation.
     // Return the number of sections.
-    return 0;
+    return 1;
 }
 
 - (NSInteger)tableView:(UITableView *)tableView numberOfRowsInSection:(NSInteger)section
 {
-#warning Incomplete method implementation.
     // Return the number of rows in the section.
-    return 0;
+    return 10;
 }
 
 - (UITableViewCell *)tableView:(UITableView *)tableView cellForRowAtIndexPath:(NSIndexPath *)indexPath
 {
-    static NSString *CellIdentifier = @"Cell";
-    UITableViewCell *cell = [tableView dequeueReusableCellWithIdentifier:CellIdentifier];
-    if (cell == nil) {
-        cell = [[UITableViewCell alloc] initWithStyle:UITableViewCellStyleDefault reuseIdentifier:CellIdentifier];
-    }
-    
-    // Configure the cell...
-    
+    static NSString *CellIdentifier = @"CellPasscode";
+    UITableViewCell *cell = [super tableView:tableView cellForRowAtIndexPath:indexPath];
+    //cell.backgroundColor = [UIColor clearColor];
     return cell;
 }
 
@@ -108,7 +180,7 @@
 }
 */
 
-/*
+
 #pragma mark - Table view delegate
 
 // In a xib-based application, navigation from a table can be handled in -tableView:didSelectRowAtIndexPath:
@@ -116,14 +188,36 @@
 {
     // Navigation logic may go here, for example:
     // Create the next view controller.
-    <#DetailViewController#> *detailViewController = [[<#DetailViewController#> alloc] initWithNibName:@"<#Nib name#>" bundle:nil];
+    //<#DetailViewController#> *detailViewController = [[<#DetailViewController#> alloc] initWithNibName:@"<#Nib name#>" bundle:nil];
 
     // Pass the selected object to the new view controller.
     
     // Push the view controller.
-    [self.navigationController pushViewController:detailViewController animated:YES];
+    //[self.navigationController pushViewController:detailViewController animated:YES];
+    if (indexPath.row==7)
+    {
+        //check if the
+        //
+        UIStoryboard *storyboard = [UIStoryboard storyboardWithName:@"Main" bundle:nil];
+        MSPascodeViewController *viewController = (MSPascodeViewController *)[storyboard instantiateViewControllerWithIdentifier:@"MSPasscodeViewController"];
+        self.navigationController.modalPresentationStyle = UIModalPresentationFormSheet;
+        self.navigationController.navigationBar.barStyle = UIBarStyleBlack;
+        [self.navigationController pushViewController:viewController animated:YES ];
+
+        //[self presentViewController:viewController animated:YES completion:nil];
+        //MSPascodeViewController *passcodeViewController =
+        NSLog(@"Selected");
+    }
+    else if (indexPath.row==8)
+    {
+        NSString * p = [Lockbox stringForKey:@"passcode"];
+        NSLog(@"%@",p);
+        [Lockbox setString:nil forKey:@"passcode"];
+        p = [Lockbox stringForKey:@"passcode"];
+        NSLog(@"%@",p);
+    }
 }
  
- */
+
 
 @end

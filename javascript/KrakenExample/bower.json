@@ -7,9 +7,11 @@
     "bootswatch": "*",
     "jquery": "*",
     "underscore": "*",
-    "backbone": "*"
-
-
-
+    "backbone": "*",
+    "dustjs-linkedin": "*",
+    "jquery-validation": "*",
+    "jqBootstrapValidation": "*",
+    "font-awesome": "~4.0.3",
+    "components-font-awesome": "~4.0.3"
   }
 }

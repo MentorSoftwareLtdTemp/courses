@@ -1,0 +1,41 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE plist PUBLIC "-//Apple//DTD PLIST 1.0//EN" "http://www.apple.com/DTDs/PropertyList-1.0.dtd">
+<plist version="1.0">
+<dict>
+	<key>IDESourceControlProjectFavoriteDictionaryKey</key>
+	<false/>
+	<key>IDESourceControlProjectIdentifier</key>
+	<string>283D805F-2545-4610-BEB4-22438F79B6C3</string>
+	<key>IDESourceControlProjectName</key>
+	<string>Tutorial</string>
+	<key>IDESourceControlProjectOriginsDictionary</key>
+	<dict>
+		<key>2B69F189-D46E-43C8-A431-3D523CB75F4A</key>
+		<string>https://github.com/MentorSoftwareLtd/courses.git</string>
+	</dict>
+	<key>IDESourceControlProjectPath</key>
+	<string>osx/ios/Tutorial/Tutorial.xcworkspace</string>
+	<key>IDESourceControlProjectRelativeInstallPathDictionary</key>
+	<dict>
+		<key>2B69F189-D46E-43C8-A431-3D523CB75F4A</key>
+		<string>../../../..</string>
+	</dict>
+	<key>IDESourceControlProjectURL</key>
+	<string>https://github.com/MentorSoftwareLtd/courses.git</string>
+	<key>IDESourceControlProjectVersion</key>
+	<integer>110</integer>
+	<key>IDESourceControlProjectWCCIdentifier</key>
+	<string>2B69F189-D46E-43C8-A431-3D523CB75F4A</string>
+	<key>IDESourceControlProjectWCConfigurations</key>
+	<array>
+		<dict>
+			<key>IDESourceControlRepositoryExtensionIdentifierKey</key>
+			<string>public.vcs.git</string>
+			<key>IDESourceControlWCCIdentifierKey</key>
+			<string>2B69F189-D46E-43C8-A431-3D523CB75F4A</string>
+			<key>IDESourceControlWCCName</key>
+			<string>courses</string>
+		</dict>
+	</array>
+</dict>
+</plist>

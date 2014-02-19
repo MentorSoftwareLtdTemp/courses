@@ -1,56 +1,59 @@
 {>"layouts/master" /}
 
 {<body}
-    <div class="row">
-        <div id="registerDialog" class="modal fade">
-            <div class="modal-dialog">
-                <div class="modal-content">
-                    <div class="modal-header">
-                        <button type="button" class="close" data-dismiss="modal" aria-hidden="true">&times;</button>
-                        <h4 class="modal-title">Register.</h4>
-                        {?messages}
-                            <ul>
-                                {#messages}
-                                    <li>{.}</li>
-                                {/messages}
+<div class="row">
+    <div class="col-md-4 col-md-offset-4">
 
-                            </ul>
-                        {/messages}
-                    </div>
-                    <form class="form-horizontal" action="/login" method="post" role='form'>
-                        <fieldset>
-                            <div class="modal-body">
+               <div id="registerView" class="panel panel-default">
+                   <div class="panel-heading">
+                       <h2>
+                       <span class="fa fa-gears"/>
+                       Registration
+                       </h2>
+                   </div>
+                   <div class="panel-body">
+                       <form id="form-register" action="/register" novalidate>
+                           <fieldset>
+                               <div class="input-group form-group">
 
-                                <div class="form-group">
-                                    <label for="user[name]" class="col-lg-2 control-label">Email</label>
-                                    <div class="col-lg-10">
-                                        <input type="text" name="username" class="form-control" id="username" placeholder="Email" required/>
-                                    </div>
-                                </div>
-                                <div class="form-group">
-                                    <label for="user[pass]" class="col-lg-2 control-label">Password</label>
-                                    <div class="col-lg-10">
-                                        <input type="password" class="form-control" id="user[pass]" placeholder="Password" required/>
-                                    </div>
-                                </div>
-                            </div>
+                                   <input type="text" class="form-control"
+                                          placeholder="Username" name="username"
+                                          minlength="2" required>
+                                   <span class="input-group-addon">
+                                       <i class="icon-append fa fa-user"></i>
+                                    </span>
 
-                            <div class="modal-footer">
-                                <div class="form-group">
-                                    <div class="col-lg-10 col-lg-offset-2">
-                                        <button id="btnCancel" class="btn btn-default" data-dismiss="modal">Cancel</button>
-                                        <button id="btnSignin" type="submit" class="btn btn-primary">Sign in</button>
-                                        <input type="hidden" name="_csrf" value="{_csrf}"/>
-                                    </div>
-                                </div>
-                            </div>
-                        </fieldset>
+                               </div>
+                               <div class="input-group form-group">
+                                   <input type="email" class="form-control" placeholder="Email" name="email" required>
+                                   <span class="input-group-addon">
+                                       <i class="fa fa-envelope"></i>
+                                    </span>
+                               </div>
+                               <div class="input-group form-group">
+                                   <input type="password" class="form-control" placeholder="Password" name="password">
+                                   <span class="input-group-addon">
+                                        <i class="icon-append fa fa-lock"></i>
+                                    </span>
+                               </div>
+                               <div class="input-group form-group">
+                                   <input type="password" class="form-control" placeholder="Confirm password" name="passwordconfirm"
+                                          data-validation-matches-match="password"
+                                          data-validation-matches-message="Must match password entered above" >
+                                   <span class="input-group-addon">
+                                        <i class="icon-append fa fa-lock"></i>
+                                    </span>
+                               </div>
+                               <button id="btnSignin" type="submit" class="btn btn-primary">Sign in</button>
 
-                    </form>
+                           </fieldset>
+                       </form>
+                   </div>
+               </div>
 
-                </div><!-- /.modal-content -->
-            </div><!-- /.modal-dialog -->
-        </div><!-- /.modal -->
+
     </div>
+</div>
+
 
 {/body}

@@ -1,0 +1,39 @@
+[class*="icon-"] {
+	display: inline-block;
+	width: 128px;
+	height: 128px;
+	background-image: url(sprites.svg);
+	background-repeat: no-repeat;
+}
+.icon-lock {
+	background-position: 0 0;
+	width: 128px;
+}
+.icon-key {
+	background-position: -144px 0;
+	width: 128px;
+}
+.icon-key2 {
+	background-position: -288px 0;
+	width: 128px;
+}
+.icon-align-justify {
+	background-position: -432px 0;
+	width: 128px;
+}
+.icon-plus {
+	background-position: -576px 0;
+	width: 101px;
+}
+.icon-trash {
+	background-position: -693px 0;
+	width: 101px;
+}
+.icon-instagram {
+	background-position: -810px 0;
+	width: 110px;
+}
+.icon-reorder {
+	background-position: -936px 0;
+	width: 110px;
+}

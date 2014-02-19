@@ -1,0 +1,140 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+    <meta name="description" content="">
+    <meta name="author" content="">
+
+    <title>Backbone test</title>
+    <link rel="stylesheet" href="css/bootstrap.css" />
+    <link rel="stylesheet" href="css/font-awesome.css" />
+
+    <link rel="stylesheet" href="main.css" />
+
+</head>
+<body>
+
+<div class="navbar navbar-inverse navbar-fixed-top" role="navigation">
+    <div class="container">
+        <div class="navbar-header">
+            <button type="button" class="navbar-toggle" data-toggle="collapse" data-target=".navbar-collapse">
+                <span class="sr-only">Toggle navigation</span>
+                <span class="icon-bar"></span>
+                <span class="icon-bar"></span>
+                <span class="icon-bar"></span>
+            </button>
+            <a class="navbar-brand" href="#">Medical Collaboration</a>
+        </div>
+        <div class="collapse navbar-collapse">
+            <ul class="nav navbar-nav">
+                <li class="active"><a href="#">Home</a></li>
+                <li><a href="#about">About</a></li>
+                <li><a href="#contact">Contact</a></li>
+            </ul>
+
+            <ul class="nav navbar-nav navbar-right">
+                <li><a href="#">Link</a></li>
+                <li class="dropdown">
+                    <a href="#" class="dropdown-toggle" data-toggle="dropdown">Dropdown <b class="caret"></b></a>
+                    <ul class="dropdown-menu">
+                        <li><a href="#">Action</a></li>
+                        <li><a href="#">Another action</a></li>
+                        <li><a href="#">Something else here</a></li>
+                        <li class="divider"></li>
+                        <li><a href="#">Separated link</a></li>
+                    </ul>
+                </li>
+            </ul>
+        </div><!--/.nav-collapse -->
+    </div>
+</div>
+
+<div class="container">
+
+    <div class="starter-template">
+        <h1>Bootstrap starter template</h1>
+        <p class="lead">Use this document as a way to quickly start any new project.<br> All you get is this text and a mostly barebones HTML document.</p>
+        <i class="fa fa-camera-retro"></i> fa-camera-retro
+        <a class="btn btn-danger" href="#">
+            <i class="fa fa-trash-o fa-lg"></i> Delete</a>
+        <a class="btn btn-default btn-sm" href="#">
+            <i class="fa fa-cog"></i> Settings</a>
+
+        <a class="btn btn-lg btn-success" href="#">
+            <i class="fa fa-flag fa-2x pull-left"></i> Font Awesome<br>Version 4.0.3</a>
+
+        <div class="btn-group">
+            <a class="btn btn-default" href="#"><i class="fa fa-align-left"></i></a>
+            <a class="btn btn-default" href="#"><i class="fa fa-align-center"></i></a>
+            <a class="btn btn-default" href="#"><i class="fa fa-align-right"></i></a>
+            <a class="btn btn-default" href="#"><i class="fa fa-align-justify"></i></a>
+        </div>
+
+        <div class="input-group margin-bottom-sm">
+            <span class="input-group-addon"><i class="fa fa-envelope-o fa-fw"></i></span>
+            <input class="form-control" type="text" placeholder="Email address">
+        </div>
+        <div class="input-group">
+            <span class="input-group-addon"><i class="fa fa-key fa-fw"></i></span>
+            <input class="form-control" type="password" placeholder="Password">
+        </div>
+
+        <div class="btn-group open">
+            <a class="btn btn-primary" href="#"><i class="fa fa-user fa-fw"></i> User</a>
+            <a class="btn btn-primary dropdown-toggle" data-toggle="dropdown" href="#">
+                <span class="fa fa-caret-down"></span></a>
+            <ul class="dropdown-menu">
+                <li><a href="#"><i class="fa fa-pencil fa-fw"></i> Edit</a></li>
+                <li><a href="#"><i class="fa fa-trash-o fa-fw"></i> Delete</a></li>
+                <li><a href="#"><i class="fa fa-ban fa-fw"></i> Ban</a></li>
+                <li class="divider"></li>
+                <li><a href="#"><i class="i"></i> Make admin</a></li>
+            </ul>
+        </div>
+
+    </div>
+
+
+</div><!-- /.container -->
+
+
+
+<script type="text/javascript" src="jquery.js"></script>
+<script type="text/javascript" src="bootstrap.js"></script>
+
+<!--
+<script>
+$(function () {
+     $("#form-register").validate({
+         onfocusout : function(element) {
+             if (!$(element).valid())
+             {
+                 console.log('validation', element);
+                 console.log($(element).parent().addClass('has-error'));
+             }
+             else
+             {
+                 $(element).parent().removeClass('has-error')
+             }
+         },
+         invalidHandler: function(event, validator) {
+         //'this' refers to the form
+         var errors = validator.numberOfInvalids();
+         if (errors) {
+             console.log('error handler');
+         }
+     }}
+     );
+ } );
+
+</script>
+-->
+
+
+<!--<script src="js/lib/bootstrap/bootstrap.js"></script>-->
+
+<!-- load js scripts-->
+</body>
+</html>

@@ -7,7 +7,27 @@
 //
 
 #import "MSKeyChain.h"
+#import "Lockbox.h"
 
 @implementation MSKeyChain
+
++ (MSKeyChain *)sharedMSKeyChain
+{
+    static MSKeyChain *sharedMSKeyChain = nil;
+    static dispatch_once_t onceToken;
+    
+    dispatch_once(&onceToken, ^{
+        sharedMSKeyChain = [[self alloc] init];
+        [sharedMSKeyChain initKeyChain];
+
+    });
+    return sharedMSKeyChain;
+}
+
+-(void)initKeyChain
+{
+    self.isPasscodeInKeyChain = false;
+}
+
 
 @end

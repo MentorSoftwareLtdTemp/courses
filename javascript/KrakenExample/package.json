@@ -39,6 +39,7 @@
     "grunt-mocha-cli": "~1.5.0",
     "grunt-copy-to": "0.0.10",
     "grunt-bower-task": "~0.3.4",
-    "grunt-bowercopy": "~0.7.1"
+    "grunt-bowercopy": "~0.7.1",
+    "grunt-dust-require": "~0.1.5"
   }
 }
