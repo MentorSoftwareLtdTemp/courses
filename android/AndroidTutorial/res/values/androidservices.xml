@@ -1,0 +1,9 @@
+ <resources>
+ <string-array name="AndroidServices">
+        <item>VibratorManager</item>
+        <item>AlertManager</item>
+        <item>Tele</item>
+ </string-array>
+
+ 
+ </resources>

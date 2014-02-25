@@ -1,0 +1,43 @@
+<resources>
+
+    <string-array name="ExplicitIntents">
+        <item>Call Activity Two</item>
+        <item>Call Activity Two with data</item>
+        <item>Call Activity Two as SubActivity</item>
+    </string-array>
+    <string-array name="ImplicitIntents">
+        <item>Open Browser</item>
+        <item>Call Someone</item>
+        <item>Dial</item>
+        <item>Show Map</item>
+        <item>Search on Map</item>
+        <item>Take picture</item>
+        <item>Show contacts</item>
+        <item>Edit first contact</item>
+    </string-array>
+    <string-array name="Other">
+        <item>LinearLayout</item>
+        <item>GridLayout</item>
+        <item>RelativeLayout</item>
+        <item>ListView</item>
+        <item>GridView</item>
+        <item>Events</item>
+        <item>Dialogs</item>
+        <item>Threads</item>
+        <item>Services</item>
+        <item>Fragments</item>
+        <item>Storage</item>
+        <item>Notification</item>
+        <item>Location</item>
+        <item>Contextual Action Mode</item>
+        <item>Sql Lite</item>
+        <item>Broadcast 1</item>
+        <item>Camera</item>
+        <item>Single Touch</item>
+        <item>Location</item>
+    </string-array>
+    <string-array name="explicit">
+        <item >AAAA</item>
+    </string-array>
+
+</resources>

@@ -1,0 +1,10 @@
+<?xml version="1.0" encoding="utf-8"?>
+<PreferenceScreen xmlns:android="http://schemas.android.com/apk/res/android" >
+    <PreferenceCategory android:title="My setting">
+        <EditTextPreference android:title="My key 1" android:summary="Please provide value for my key 1" android:key="mykey1"/>
+        <EditTextPreference android:title="My key 2" android:summary="Please provide value for my key 2" android:key="mykey2"/>
+        
+    </PreferenceCategory>
+    
+
+</PreferenceScreen>

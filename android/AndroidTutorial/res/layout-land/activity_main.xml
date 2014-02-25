@@ -1,0 +1,67 @@
+<GridLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:columnCount="3"
+    tools:context=".MainActivity" >
+
+    <TextView
+        android:id="@+id/textView1"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_columnSpan="3"
+        android:text="MainActivity" />
+
+    <Spinner
+        android:id="@+id/spinnerExplicit"
+        android:layout_width="180dp"
+        android:layout_height="wrap_content"
+        android:layout_column="0"
+        android:drawSelectorOnTop="true"
+        android:entries="@array/ExplicitIntents" >
+    </Spinner>
+
+    <Button
+        android:id="@+id/button1"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_column="0"
+        android:onClick="onClickExplicit"
+        android:text="@string/callexplicit" >
+    </Button>
+
+    <Button
+        android:id="@+id/button2"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_column="1"
+        android:onClick="onClickImplicit"
+        android:text="Call Implicit" >
+    </Button>
+
+    <Button
+        android:id="@+id/button3"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_column="2"
+        android:onClick="onClickOther"
+        android:text="Call other" />
+
+    <Spinner
+        android:id="@+id/spinnerImplicit"
+        android:layout_width="170dp"
+        android:layout_height="wrap_content"
+        android:layout_column="1"
+        android:layout_gravity="left|top"
+        android:layout_row="1"
+        android:drawSelectorOnTop="true" />
+
+    <Spinner
+        android:id="@+id/spinnerOther"
+        android:layout_width="162dp"
+        android:layout_height="wrap_content"
+        android:layout_column="2"
+        android:layout_gravity="left|top"
+        android:layout_row="1" />
+
+</GridLayout>

@@ -1,0 +1,35 @@
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical"
+    tools:context=".AndroidServices" >
+
+    <Spinner
+        android:id="@+id/spinnerService"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content" />
+
+    <Button
+        android:id="@+id/button1"
+        android:layout_width="111dp"
+        android:layout_height="wrap_content"
+        android:onClick="androidService"
+        android:text="Android Service" />
+
+    <Button
+        android:id="@+id/button2"
+        android:layout_width="108dp"
+        android:layout_height="wrap_content"
+        android:onClick="intentReceiver"
+        android:text="Intent Receiver" />
+
+        <Button
+        android:id="@+id/button3"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="Start Service" 
+        android:onClick="startService"/>
+    
+</LinearLayout>
+

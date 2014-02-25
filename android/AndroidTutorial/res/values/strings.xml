@@ -1,0 +1,39 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+
+    <string name="app_name">Tutorial</string>
+    <string name="action_settings">Setting</string>
+    <string name="hello_world">Hello world!</string>
+    <string name="title_activity_activity_two">ActivityTwo</string>
+    <string name="title_activity_activity_three">ActivityThree</string>
+    <string name="title_activity_browser">BrowserActivity</string>
+    <string name="title_activity_list_view">ListViewActivity</string>
+    <string name="title_activity_linear_layout">LinearLayoutActivity</string>
+    <string name="title_activity_grid_layout">GridLayoutActivity</string>
+    <string name="title_activity_relative_layout">RelativeLayout</string>
+    <string name="title_activity_event">EventActivity</string>
+    <string name="title_activity_dialog">DialogActivity</string>
+    <string name="hello_blank_fragment">Hello blank fragment</string>
+    <string name="title_activity_fragment">FragmentActivity</string>
+    <string name="permlab_deadlyActivity">Deadly Activity.</string>
+    <string name="permdesc_deadlyActivity">It will cost you money.</string>
+    <string name="title_activity_storage">StorageActivity</string>
+    <string name="title_activity_preference">Settings</string>
+    <string name="title_activity_android_services">AndroidServices</string>
+    <string name="title_activity_thread">ThreadActivity</string>
+    <string name="title_activity_canvas">CanvasActivity</string>
+    <string name="callexplicit">Call Explicit</string>
+    <string name="title_activity_sql_liste">SqlListe</string>
+    <string name="title_activity_manager">ManagerActivity</string>
+    <string name="title_activity_geo_location">GeoLocation</string>
+    <string name="title_activity_google_map_test">GoogleMapTest</string>
+    <string name="title_activity_grid_view">GridViewActivity</string>
+    <string name="title_activity_contextual_action_bar">ContextualActionBar</string>
+    <string name="title_activity_broadcast_receiver">BroadcastReceiverActivity</string>
+    <string name="title_activity_notofication">NotoficationActivity</string>
+    <string name="title_activity_camera">CameraActivity</string>
+    <string name="title_activity_single_touch">SingleTouchActivity</string>
+    <string name="title_activity_linear_layout1">LinearLayout1</string>
+    <string name="title_activity_show_location">ShowLocationActivity</string>
+
+</resources>

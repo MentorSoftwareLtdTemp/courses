@@ -1,0 +1,191 @@
+<?xml version="1.0" encoding="utf-8"?>
+<manifest xmlns:android="http://schemas.android.com/apk/res/android"
+    package="com.mentorsoftwareltd.androidtutorial"
+    android:versionCode="1"
+    android:versionName="1.0" >
+
+    <uses-sdk
+        android:minSdkVersion="17"
+        android:targetSdkVersion="19" />
+
+    <uses-permission android:name="android.permission.CALL_PHONE" >
+    </uses-permission>
+    <!-- Camera -->
+    <uses-permission android:name="android.permission.CAMERA" />
+    <uses-permission android:name="android.permission.WRITE_EXTERNAL_STORAGE" />
+    <uses-permission android:name="android.permission.READ_CONTACTS" >
+    </uses-permission>
+    <uses-permission android:name="android.permission.INTERNET" />
+    <uses-permission android:name="android.permission.ACCESS_FINE_LOCATION" />
+    <uses-permission android:name="android.permission.ACCESS_COARSE_LOCATION" />
+    <uses-permission android:name="android.permission.VIBRATE" />
+    <uses-permission android:name="android.permission.READ_PHONE_STATE" />
+
+    <!--
+          <permission android:name="com.me.app.myapp.permission.DEADLY_ACTIVITY"
+        android:label="@string/permlab_deadlyActivity"
+        android:description="@string/permdesc_deadlyActivity"
+        android:permissionGroup="android.permission-group.COST_MONEY"
+        android:protectionLevel="dangerous" />
+    -->
+    <application
+        android:allowBackup="true"
+        android:icon="@drawable/ic_launcher"
+        android:label="@string/app_name"
+        android:theme="@style/AppTheme" >
+        <activity
+            android:name="com.mentorsoftwareltd.androidtutorial.MainActivity"
+            android:label="@string/app_name" >
+            <intent-filter>
+                <action android:name="android.intent.action.MAIN" />
+
+                <category android:name="android.intent.category.LAUNCHER" />
+            </intent-filter>
+        </activity>
+        <activity
+            android:name="com.mentorsoftwareltd.androidtutorial.ActivityTwo"
+            android:label="@string/title_activity_activity_two" >
+        </activity>
+        <activity
+            android:name="com.mentorsoftwareltd.androidtutorial.BrowserActivity"
+            android:label="@string/title_activity_browser" >
+            <intent-filter>
+                <action android:name="android.intent.action." />
+
+                <category android:name="android.intent.category.DEFAULT" />
+
+                <data android:scheme="http" />
+            </intent-filter>
+        </activity>
+        <activity
+            android:name="com.mentorsoftwareltd.androidtutorial.layouts.LinearLayoutActivity"
+            android:label="@string/title_activity_linear_layout" >
+        </activity>
+        <activity
+            android:name="com.mentorsoftwareltd.androidtutorial.layouts.GridLayoutActivity"
+            android:label="@string/title_activity_grid_layout" >
+        </activity>
+        <activity
+            android:name="com.mentorsoftwareltd.androidtutorial.layouts.RelativeLayoutActivity"
+            android:label="@string/title_activity_relative_layout" >
+        </activity>
+        <activity
+            android:name="com.mentorsoftwareltd.androidtutorial.EventActivity"
+            android:label="@string/title_activity_event" >
+        </activity>
+        <activity
+            android:name="com.mentorsoftwareltd.androidtutorial.layouts.ListViewActivity"
+            android:label="@string/title_activity_list_view" >
+        </activity>
+        <activity
+            android:name="com.mentorsoftwareltd.androidtutorial.DialogActivity"
+            android:label="@string/title_activity_dialog" >
+        </activity>
+        <activity
+            android:name="com.mentorsoftwareltd.androidtutorial.FragmentActivity"
+            android:label="@string/title_activity_fragment" >
+        </activity>
+        <activity
+            android:name="com.mentorsoftwareltd.androidtutorial.files.StorageActivity"
+            android:label="@string/title_activity_storage" >
+        </activity>
+        <activity
+            android:name="com.mentorsoftwareltd.androidtutorial.MyPreferenceActivity"
+            android:label="@string/title_activity_preference" >
+        </activity>
+        <activity
+            android:name="com.mentorsoftwareltd.androidtutorial.AndroidServices"
+            android:label="@string/title_activity_android_services" >
+        </activity>
+
+        <receiver
+            android:name="com.mentorsoftwareltd.androidtutorial.services.MyReceiver"
+            android:enabled="true"
+            android:exported="true" >
+            <intent-filter>
+                <action android:name="android.intent.action.PHONE_STATE" />
+                <action android:name="android.intent.action.SCREEN_OFF" />
+                <action android:name="com.mentorsoftwareltd.mybroadcast" />
+            </intent-filter>
+        </receiver>
+        <receiver android:name="com.mentorsoftwareltd.androidtutorial.services.MyBroadcastReceiver" >
+        </receiver>
+
+        <service
+            android:name="com.mentorsoftwareltd.androidtutorial.services.MyService"
+            android:enabled="true"
+            android:exported="true" >
+        </service>
+        <service android:name="com.mentorsoftwareltd.androidtutorial.services.MyIntentService" >
+        </service>
+
+        <activity
+            android:name="com.mentorsoftwareltd.androidtutorial.ThreadActivity"
+            android:label="@string/title_activity_thread" >
+        </activity>
+
+        <receiver android:name="com.mentorsoftwareltd.androidtutorial.MyWidgetProvider" >
+            <intent-filter>
+                <action android:name="android.appwidget.action.APPWIDGET_UPDATE" />
+            </intent-filter>
+
+            <meta-data
+                android:name="android.appwidget.provider"
+                android:resource="@xml/widget_provider" />
+        </receiver>
+
+        <activity
+            android:name="com.mentorsoftwareltd.androidtutorial.CanvasActivity"
+            android:label="@string/title_activity_canvas" >
+        </activity>
+        <activity
+            android:name="com.mentorsoftwareltd.androidtutorial.SqlList"
+            android:label="@string/title_activity_sql_liste" >
+        </activity>
+        <activity
+            android:name="com.mentorsoftwareltd.androidtutorial.ManagerActivity"
+            android:label="@string/title_activity_manager" >
+        </activity>
+        <activity
+            android:name="com.mentorsoftwareltd.androidtutorial.GeoLocation"
+            android:label="@string/title_activity_geo_location" >
+        </activity>
+        <activity
+            android:name="com.mentorsoftwareltd.androidtutorial.GoogleMapTest"
+            android:label="@string/title_activity_google_map_test" >
+        </activity>
+        <activity
+            android:name="com.mentorsoftwareltd.androidtutorial.layouts.GridViewActivity"
+            android:label="@string/title_activity_grid_view" >
+        </activity>
+        <activity
+            android:name="com.mentorsoftwareltd.androidtutorial.ContextualActionBar"
+            android:label="@string/title_activity_contextual_action_bar" >
+        </activity>
+        <activity
+            android:name="com.mentorsoftwareltd.androidtutorial.services.BroadcastReceiverActivity"
+            android:label="@string/title_activity_broadcast_receiver" >
+        </activity>
+        <activity
+            android:name="com.mentorsoftwareltd.androidtutorial.NotificationActivity"
+            android:label="@string/title_activity_notofication" >
+        </activity>
+        <activity
+            android:name="com.mentorsoftwareltd.androidtutorial.camera.CameraActivity"
+            android:label="@string/title_activity_camera" >
+        </activity>
+        <activity
+            android:name="com.mentorsoftwareltd.androidtutorial.gestures.SingleTouchActivity"
+            android:label="@string/title_activity_single_touch" >
+        </activity>
+        <activity
+            android:name="com.mentorsoftwareltd.androidtutorial.LinearLayout1"
+            android:label="@string/title_activity_linear_layout1" >
+        </activity>
+        <activity
+            android:name="com.mentorsoftwareltd.androidtutorial.ShowLocationActivity"
+            android:label="@string/title_activity_show_location" >
+        </activity>
+    </application>
+
+</manifest>

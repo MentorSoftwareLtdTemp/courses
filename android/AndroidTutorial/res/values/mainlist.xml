@@ -1,0 +1,12 @@
+<resources>
+
+    <string-array name="MainList">
+        <item>Intents</item>
+        <item>Layouts</item>
+        <item>UI Components and Events</item>
+        <item>Dialogs</item>
+        <item>Services</item>
+        <item>Threads</item>
+    </string-array>
+
+</resources>

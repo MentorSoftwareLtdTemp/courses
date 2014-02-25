@@ -1,0 +1,34 @@
+<GridLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:columnCount="1"
+    android:useDefaultMargins="true"
+    tools:context=".ActivityTwo" >
+
+    <TextView
+        android:id="@+id/textView1"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="Activity Two" />
+
+
+    <TextView
+        android:id="@+id/textView2"
+        android:layout_gravity="fill_horizontal"
+        android:text="TextView" />
+
+
+    <Button
+        android:id="@+id/button1"
+        android:layout_gravity="fill_horizontal"
+        android:onClick="showMainActivity"
+        android:text="Main Activity" />
+
+    <Button
+        android:id="@+id/button2"
+        android:layout_height="wrap_content"
+        android:layout_gravity="left|top"
+        android:text="Button" />
+
+</GridLayout>

@@ -1,0 +1,137 @@
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:alignmentMode="alignBounds"
+    android:columnCount="1"
+    android:orientation="vertical"
+    tools:context=".MainActivity" >
+
+    <TextView
+        android:id="@+id/textView1"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="MainActivity"
+        android:height="20px"
+        
+         />
+
+    <Spinner
+        android:id="@+id/spinnerExplicit"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:drawSelectorOnTop="true" 
+        android:entries="@array/ExplicitIntents">
+    </Spinner>
+
+    <Button
+        android:id="@+id/button1"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:onClick="onClickExplicit"
+        android:text="@string/callexplicit" >
+
+    </Button>
+
+    <Spinner
+        android:id="@+id/spinnerImplicit"
+          android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:drawSelectorOnTop="true" >
+    </Spinner>
+
+    <Button
+        android:id="@+id/button2"
+        android:onClick="onClickImplicit"
+          android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="Call Implicit" >
+    </Button>
+
+    <!-- <GridLayout android:columnCount="4" >
+
+        <Button
+            android:id="@+id/button3"
+            android:onClick="showLinearLayout"
+            android:text="Linear" />
+
+        <Button
+            android:id="@+id/button4"
+            android:text="Grid" 
+            android:onClick="showGridLayout"/>
+
+        <Button
+            android:id="@+id/button5"
+            android:text="Relative" 
+            android:onClick="showRelativeLayout"/>
+    </GridLayout>
+
+ 	<GridLayout
+ 	    android:layout_width="fill_parent"
+ 	    android:columnCount="4" >
+
+ 		<Button
+ 		    android:id="@+id/button6"
+ 		    android:layout_column="0"
+ 		    android:layout_gravity="left|top"
+ 		    android:layout_row="0"
+ 		    android:text="Events" 
+ 		    android:onClick="showEventsActivity"/>
+
+ 		<Button
+ 		    android:id="@+id/button8"
+ 		    android:layout_column="3"
+ 		    android:layout_gravity="left|top"
+ 		    android:layout_row="0"
+ 		    android:text="Dialogs"
+ 		    android:onClick="showDialogs" />
+
+ 		<Button
+ 		    android:id="@+id/button11"
+ 		    android:layout_column="3"
+ 		    android:layout_gravity="center_horizontal|top"
+ 		    android:layout_row="0"
+ 		    android:onClick="showAndroidThread"
+ 		    android:text="Threads" />
+    
+	</GridLayout>
+
+ 	<Button
+ 	    android:id="@+id/button7"
+ 	    android:layout_column="0"
+ 	    android:layout_gravity="right|top"
+ 	    android:layout_row="5"
+ 	    android:text="ListView" 
+ 	    android:onClick="showListView"/>
+
+ 	<Button
+ 	    android:id="@+id/button10"
+ 	    android:layout_column="0"
+ 	    android:layout_gravity="left|center_vertical"
+ 	    android:layout_row="6"
+ 	    android:text="AndroidServices" 
+ 	    android:onClick="showAndroidServices"/>
+
+ 	<Button
+ 	    android:id="@+id/button9"
+ 	    android:layout_column="0"
+ 	    android:layout_gravity="right|center_vertical"
+ 	    android:layout_row="6"
+ 	    android:onClick="showFragments"
+ 	    android:text="Fragments" />
+ 	     -->
+
+ 	<Spinner
+ 	    android:id="@+id/spinnerOther"
+ 	      android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+ 	    />
+
+ 	<Button
+ 	    android:id="@+id/button3"
+ 	      android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+ 	    android:text="Call other"
+ 	    android:onClick="onClickOther" />
+
+</LinearLayout>
