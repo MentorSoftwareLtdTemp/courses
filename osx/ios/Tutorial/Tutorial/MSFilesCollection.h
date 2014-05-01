@@ -8,6 +8,6 @@
 
 #import <Foundation/Foundation.h>
 
-@interface MSFilesCollection : NSObject
-
+@interface MSFilesCollection : NSObject<UICollectionViewDelegate,UICollectionViewDataSource>
+    @property (strong, nonatomic) NSMutableArray *myImages;
 @end

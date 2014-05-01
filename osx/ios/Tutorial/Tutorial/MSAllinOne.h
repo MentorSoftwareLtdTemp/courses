@@ -7,7 +7,11 @@
 //
 
 #import <UIKit/UIKit.h>
+#import "MSMyCell.h"
+#import "MSFilesCollection.h"
 
 @interface MSAllinOne : UITableViewController
+@property (weak, nonatomic) IBOutlet UICollectionView *collectionFiles;
+@property MSFilesCollection *msFilesCollection;
 
 @end
