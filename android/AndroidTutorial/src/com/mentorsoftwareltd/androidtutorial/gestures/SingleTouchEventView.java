@@ -27,6 +27,8 @@ public class SingleTouchEventView extends View {
   protected void onDraw(Canvas canvas) {
     canvas.drawPath(path, paint);
   }
+  
+  SimpleA
 
   @Override
   public boolean onTouchEvent(MotionEvent event) {

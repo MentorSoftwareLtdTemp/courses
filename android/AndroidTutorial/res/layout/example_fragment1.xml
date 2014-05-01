@@ -8,6 +8,7 @@
         android:id="@+id/textView1"
         android:layout_width="match_parent"
         android:layout_height="wrap_content"
-        android:text="This is fragment 1" />
+        android:text="This is fragment 1" 
+        android:width="20px"/>
 
 </LinearLayout>

@@ -20,6 +20,10 @@
     <uses-permission android:name="android.permission.ACCESS_COARSE_LOCATION" />
     <uses-permission android:name="android.permission.VIBRATE" />
     <uses-permission android:name="android.permission.READ_PHONE_STATE" />
+    <uses-permission android:name="android.permission.ACCESS_WIFI_STATE" />
+    <uses-permission android:name="android.permission.CHANGE_WIFI_STATE" />
+    <uses-permission android:name="android.permission.CHANGE_WIFI_MULTICAST_STATE" />
+
 
     <!--
           <permission android:name="com.me.app.myapp.permission.DEADLY_ACTIVITY"
@@ -50,7 +54,7 @@
             android:name="com.mentorsoftwareltd.androidtutorial.BrowserActivity"
             android:label="@string/title_activity_browser" >
             <intent-filter>
-                <action android:name="android.intent.action." />
+                <action android:name="android.intent.action.VIEW" />
 
                 <category android:name="android.intent.category.DEFAULT" />
 
@@ -185,6 +189,18 @@
         <activity
             android:name="com.mentorsoftwareltd.androidtutorial.ShowLocationActivity"
             android:label="@string/title_activity_show_location" >
+        </activity>
+        <activity
+            android:name="com.mentorsoftwareltd.androidtutorial.TableLayoutActivity"
+            android:label="@string/title_activity_table_layout" >
+        </activity>
+        <activity
+            android:name="com.mentorsoftwareltd.androidtutorial.ServiceActivity"
+            android:label="@string/title_activity_service" >
+        </activity>
+        <activity
+            android:name="com.mentorsoftwareltd.androidtutorial.WifiActivity"
+            android:label="@string/title_activity_wifi" >
         </activity>
     </application>
 

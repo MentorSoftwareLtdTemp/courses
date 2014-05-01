@@ -43,7 +43,7 @@ public class AndroidServices extends Activity {
 	    case 1:
 	    		Calendar calendar = Calendar.getInstance();
 	    		calendar.add(Calendar.MINUTE, 1);
-	    	//PendingIntent pi = PendingIntent.getActivity(this, requestCode, intent, flags);
+	    	//PendingIntent pi = PendingIntent.getActivity(this, 0, intent, flags);
 	    		AlarmManager alarm=(AlarmManager)getApplicationContext().getSystemService(Context.ALARM_SERVICE);
 	    	//alarm.set(AlarmManager.RTC_WAKEUP, calendar.getTimeInMillis(), operation);
 	    	break;

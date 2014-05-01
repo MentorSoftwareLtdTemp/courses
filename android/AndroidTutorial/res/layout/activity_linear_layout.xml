@@ -17,17 +17,15 @@
         android:layout_height="wrap_content"
         android:layout_weight="1"
         android:background="#EEEEEE"
-        android:gravity="center"
+        android:gravity="left"
         android:orientation="horizontal" >
 
-<Button
-    android:id="@+id/btnLinearLayout1"
-    android:layout_width="wrap_content"
-    android:layout_height="wrap_content"
-     android:layout_gravity="top|left"
-    
-    android:text="top" >
-
+        <Button
+            android:id="@+id/btnLinearLayout1"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_gravity="top|left"
+            android:text="top" >
         </Button>
 
         <Button
@@ -35,9 +33,7 @@
             android:layout_width="wrap_content"
             android:layout_height="wrap_content"
             android:layout_gravity="center"
-            
             android:text="center" >
-
         </Button>
 
         <Button
@@ -45,11 +41,8 @@
             android:layout_width="wrap_content"
             android:layout_height="wrap_content"
             android:layout_gravity="bottom"
-            
             android:text="bottom" >
-
         </Button>
-      
     </LinearLayout>
 
     <TextView
@@ -66,14 +59,13 @@
         android:background="#DDDDDD"
         android:gravity="center"
         android:orientation="vertical" >
-    
-         <Button
-             android:id="@+id/btnLinearLayout4"
-             android:layout_width="wrap_content"
-             android:layout_height="wrap_content"
-             android:layout_gravity="left"
-             android:text="left" >
 
+        <Button
+            android:id="@+id/btnLinearLayout4"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_gravity="left"
+            android:text="left" >
         </Button>
 
         <Button
@@ -91,7 +83,6 @@
             android:layout_gravity="right"
             android:text="right" >
         </Button>
-       
     </LinearLayout>
 
 </LinearLayout>

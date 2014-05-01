@@ -1,8 +1,8 @@
  <resources>
  <string-array name="AndroidServices">
-        <item>VibratorManager</item>
-        <item>AlertManager</item>
-        <item>Tele</item>
+        <item>TelephonyMananger</item>
+        <item>SoundPool</item>
+        <item>MediaPlayer</item>
  </string-array>
 
  

@@ -11,7 +11,7 @@
         android:id="@+id/action_serch"
         android:actionViewClass="android.widget.SearchView"
         android:icon="@drawable/ic_action_search"
-        android:showAsAction="ifRoom|withText"
+        android:showAsAction="alwaysś"
         android:title="Search"/>
     <item
         android:id="@+id/action_refresh"

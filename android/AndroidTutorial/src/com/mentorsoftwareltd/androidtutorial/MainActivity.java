@@ -39,62 +39,59 @@ public class MainActivity extends Activity {
 	private MenuItem itemSetting;
 
 	private SharedPreferences preferences;
-	private static final String TAG="com.mentorsoftwareltd.androidtutorial.MainActivity";
+	private static final String TAG = "com.mentorsoftwareltd.androidtutorial.MainActivity";
 
-	private void showPackageInfo()
-	{
+	private void showPackageInfo() {
+
 		PackageManager packageManager = getPackageManager();
+		PackageInfo pck = null;
 		try {
-			PackageInfo pck = packageManager
-					.getPackageInfo(getPackageName(), 0);
-			Log.i("Package versiobnCode", "" + pck.versionCode);
-			Log.i("Package versionName", pck.versionName);
-
+			pck = packageManager.getPackageInfo(getPackageName(), 0);
 		} catch (NameNotFoundException e) {
 			// TODO Auto-generated catch block
 			e.printStackTrace();
 		}
-		
+		Log.i("Package versiobnCode", "" + pck.versionCode);
+		Log.i("Package versionName", pck.versionName);
+
 	}
-	
+
 	@Override
 	protected void onStart() {
 		super.onStart();
 		Log.i(TAG, "Method onStart");
 	}
-	
+
 	@Override
 	protected void onResume() {
 		Log.i(TAG, "Method onResume");
 		super.onResume();
 	}
+
 	@Override
 	protected void onRestart() {
 		Log.i(TAG, "Method onRestart");
 		super.onRestart();
 	}
-	
+
 	@Override
 	protected void onPause() {
 		super.onPause();
 		Log.i(TAG, "Method onPause");
 	}
-	
+
 	@Override
 	protected void onStop() {
 		super.onStop();
 		Log.i(TAG, "Method onStop");
 	}
-	
-	
+
 	@Override
 	protected void onDestroy() {
 		super.onDestroy();
 		Log.i(TAG, "Method onDestroy");
 	}
-	
-	
-	
+
 	@Override
 	protected void onCreate(Bundle savedInstanceState) {
 		Log.i(TAG, "Method onCreate");
@@ -141,30 +138,30 @@ public class MainActivity extends Activity {
 			Toast.makeText(this, "You select settings", Toast.LENGTH_LONG)
 					.show();
 			// item1.setVisible(false);
-			/*Intent i = new Intent(MainActivity.this,
-					MyPreferencesActivity.class);
-			startActivity(i);*/
+			/*
+			 * Intent i = new Intent(MainActivity.this,
+			 * MyPreferencesActivity.class); startActivity(i);
+			 */
 			// invalidateOptionsMenu();
 			return true;
 		case R.id.action_2:
 			Toast.makeText(this, "You select action2", Toast.LENGTH_LONG)
 					.show();
-			getWindow().
-			  getDecorView().
-			  setSystemUiVisibility(View.SYSTEM_UI_FLAG_HIDE_NAVIGATION); 
+			getWindow().getDecorView().setSystemUiVisibility(
+					View.SYSTEM_UI_FLAG_HIDE_NAVIGATION);
 			return true;
 		case R.id.action_3:
 			Toast.makeText(this, "You select action3", Toast.LENGTH_LONG)
 					.show();
 			invalidateOptionsMenu();
 			return true;
-		// If home icon is clicked but not needed since 3.0.
-		//android:parentActivityName="MainActivity" for other activities
+			// If home icon is clicked but not needed since 3.0.
+			// android:parentActivityName="MainActivity" for other activities
 		case android.R.id.home:
-		  Intent intent = new Intent(this, MainActivity.class);
-		  intent.addFlags(Intent.FLAG_ACTIVITY_CLEAR_TOP);
-		  startActivity(intent);
-		  return true; 
+			Intent intent = new Intent(this, MainActivity.class);
+			intent.addFlags(Intent.FLAG_ACTIVITY_CLEAR_TOP);
+			startActivity(intent);
+			return true;
 		default:
 			return super.onOptionsItemSelected(item);
 
@@ -247,39 +244,58 @@ public class MainActivity extends Activity {
 		case 18:
 			showLocation();
 			break;
+		case 19:
+			showWifi();
+			break;
+		case 20:
+			showServices();
+			break;
+		
 		}
+		
 	}
-	
-	private void showLocation()
+	private void showServices()
 	{
+		Intent i = new Intent(this, ServiceActivity.class);
+		startActivity(i);
+		
+	}
+	private void showWifi()
+	{
+		Intent i = new Intent(this, WifiActivity.class);
+		startActivity(i);
+		
+	}
+
+	private void showLocation() {
 		Intent i = new Intent(this, ShowLocationActivity.class);
 		startActivity(i);
-		
+
 	}
-	private void showCamera()
-	{
+
+	private void showCamera() {
 		Intent i = new Intent(this, CameraActivity.class);
 		startActivity(i);
-		
+
 	}
-	
-	private void showTouchSingle()
-	{
+
+	private void showTouchSingle() {
 		Intent i = new Intent(this, SingleTouchActivity.class);
 		startActivity(i);
-		
+
 	}
-	private void showBroadcast1()
-	{
+
+	private void showBroadcast1() {
 		Intent i = new Intent(this, BroadcastReceiverActivity.class);
 		startActivity(i);
-		
+
 	}
-	private void showSqlList()
-	{
+
+	private void showSqlList() {
 		Intent i = new Intent(this, SqlList.class);
 		startActivity(i);
 	}
+
 	private void showContextualActionBar(View v) {
 		Intent i = new Intent(this, ContextualActionBar.class);
 		startActivity(i);
@@ -288,7 +304,7 @@ public class MainActivity extends Activity {
 	private void showGridView(View v) {
 		Intent i = new Intent(this, GridViewActivity.class);
 		startActivity(i);
-		
+
 	}
 
 	private void showLocation(View v) {
@@ -301,8 +317,7 @@ public class MainActivity extends Activity {
 		startActivity(i);
 	}
 
-	public void showStorageActivity(View v)
-	{
+	public void showStorageActivity(View v) {
 		Intent i = new Intent(this, StorageActivity.class);
 		startActivity(i);
 	}
@@ -380,7 +395,7 @@ public class MainActivity extends Activity {
 
 		}
 		if (intent != null) {
-			startActivity(intent);
+				startActivity(intent);
 		}
 	}
 

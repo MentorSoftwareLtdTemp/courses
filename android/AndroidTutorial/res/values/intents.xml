@@ -35,9 +35,11 @@
         <item>Camera</item>
         <item>Single Touch</item>
         <item>Location</item>
+        <item>Wifi</item>
+        <item>Services</item>
     </string-array>
     <string-array name="explicit">
-        <item >AAAA</item>
+        <item>AAAA</item>
     </string-array>
 
 </resources>

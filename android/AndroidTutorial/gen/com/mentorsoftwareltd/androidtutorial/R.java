@@ -9,29 +9,34 @@ package com.mentorsoftwareltd.androidtutorial;
 
 public final class R {
     public static final class array {
-        public static final int AndroidServices=0x7f050000;
-        public static final int ExplicitIntents=0x7f050001;
-        public static final int ImplicitIntents=0x7f050002;
-        public static final int MainList=0x7f050006;
-        public static final int Other=0x7f050003;
-        public static final int explicit=0x7f050004;
-        public static final int implicit=0x7f050007;
-        public static final int listViewEntr1=0x7f050005;
+        public static final int AndroidServices=0x7f060000;
+        public static final int ExplicitIntents=0x7f060001;
+        public static final int ImplicitIntents=0x7f060002;
+        public static final int MainList=0x7f060006;
+        public static final int Other=0x7f060003;
+        public static final int explicit=0x7f060004;
+        public static final int implicit=0x7f060007;
+        public static final int listViewEntr1=0x7f060005;
     }
     public static final class attr {
     }
     public static final class color {
-        public static final int mycolor=0x7f090000;
+        public static final int mycolor=0x7f0a0000;
     }
     public static final class dimen {
         /**  Default screen margins, per the Android Design guidelines. 
+
+         Example customization of dimensions originally defined in res/values/dimens.xml
+         (such as screen margins) for screens with more than 820dp of available width. This
+         would include 7" and 10" devices in landscape (~960dp and ~1280dp respectively).
+    
 
          Customize dimensions originally defined in res/values/dimens.xml (such as
          screen margins) for sw720dp devices (e.g. 10" tablets) in landscape here.
     
          */
-        public static final int activity_horizontal_margin=0x7f060000;
-        public static final int activity_vertical_margin=0x7f060001;
+        public static final int activity_horizontal_margin=0x7f070000;
+        public static final int activity_vertical_margin=0x7f070001;
     }
     public static final class drawable {
         public static final int ic_action_accept=0x7f020000;
@@ -69,73 +74,81 @@ public final class R {
         public static final int ic_stat_name=0x7f020020;
     }
     public static final class id {
-        public static final int ButtonReadFile=0x7f0b0032;
-        public static final int TextView01=0x7f0b000d;
-        public static final int TextView02=0x7f0b0012;
-        public static final int TextView03=0x7f0b0014;
-        public static final int TextView04=0x7f0b0015;
-        public static final int action_2=0x7f0b0041;
-        public static final int action_3=0x7f0b0042;
-        public static final int action_admin=0x7f0b003e;
-        public static final int action_create=0x7f0b003b;
-        public static final int action_delete=0x7f0b003a;
-        public static final int action_refresh=0x7f0b0040;
-        public static final int action_serch=0x7f0b003f;
-        public static final int action_settings=0x7f0b0039;
-        public static final int add=0x7f0b002b;
-        public static final int btnLinearLayout1=0x7f0b001f;
-        public static final int btnLinearLayout2=0x7f0b0020;
-        public static final int btnLinearLayout3=0x7f0b0021;
-        public static final int btnLinearLayout4=0x7f0b0022;
-        public static final int btnLinearLayout5=0x7f0b0023;
-        public static final int btnLinearLayout6=0x7f0b0024;
-        public static final int button1=0x7f0b0001;
-        public static final int button2=0x7f0b0002;
-        public static final int button3=0x7f0b0003;
-        public static final int button4=0x7f0b0018;
-        public static final int button5=0x7f0b0019;
-        public static final int button6=0x7f0b001a;
-        public static final int button7=0x7f0b001d;
-        public static final int button8=0x7f0b001b;
-        public static final int button9=0x7f0b001c;
-        public static final int buttonEvent1=0x7f0b000b;
-        public static final int buttonReadPrefs=0x7f0b002e;
-        public static final int buttonWriteFile=0x7f0b0031;
-        public static final int buttonWritePrefs=0x7f0b002f;
-        public static final int captureFront=0x7f0b0006;
-        public static final int context_ab1=0x7f0b003c;
-        public static final int context_ab2=0x7f0b003d;
-        public static final int delete=0x7f0b002c;
-        public static final int editText1=0x7f0b002a;
-        public static final int editTextEvent1=0x7f0b000a;
-        public static final int editTextFile=0x7f0b0030;
-        public static final int editTextPrefs=0x7f0b002d;
-        public static final int edit_name=0x7f0b0035;
-        public static final int fragment1=0x7f0b000f;
-        public static final int fragment2=0x7f0b0010;
-        public static final int grid_view=0x7f0b001e;
-        public static final int imageView1=0x7f0b0007;
-        public static final int lbl_your_name=0x7f0b0036;
-        public static final int linearLayout1=0x7f0b0011;
-        public static final int linearLayout2=0x7f0b0013;
-        public static final int listView1=0x7f0b0029;
-        public static final int listViewContext=0x7f0b0009;
-        public static final int map=0x7f0b0016;
-        public static final int mylist=0x7f0b0025;
-        public static final int ok=0x7f0b0005;
-        public static final int progressBar1=0x7f0b0033;
-        public static final int progressBar2=0x7f0b0034;
-        public static final int spinnerExplicit=0x7f0b0026;
-        public static final int spinnerImplicit=0x7f0b0027;
-        public static final int spinnerOther=0x7f0b0028;
-        public static final int spinnerService=0x7f0b0000;
-        public static final int surfaceView1=0x7f0b0008;
-        public static final int textView1=0x7f0b000c;
-        public static final int textView2=0x7f0b0017;
-        public static final int textViewEvent=0x7f0b000e;
-        public static final int time=0x7f0b0004;
-        public static final int tvWidgetText=0x7f0b0038;
-        public static final int txt_your_name=0x7f0b0037;
+        public static final int ButtonReadFile=0x7f0c0037;
+        public static final int TextView01=0x7f0c000d;
+        public static final int TextView02=0x7f0c0012;
+        public static final int TextView03=0x7f0c0014;
+        public static final int TextView04=0x7f0c0015;
+        public static final int action_2=0x7f0c0049;
+        public static final int action_3=0x7f0c004a;
+        public static final int action_admin=0x7f0c0046;
+        public static final int action_create=0x7f0c0043;
+        public static final int action_delete=0x7f0c0042;
+        public static final int action_refresh=0x7f0c0048;
+        public static final int action_serch=0x7f0c0047;
+        public static final int action_settings=0x7f0c0041;
+        public static final int add=0x7f0c0030;
+        public static final int btnLinearLayout1=0x7f0c001f;
+        public static final int btnLinearLayout2=0x7f0c0020;
+        public static final int btnLinearLayout3=0x7f0c0021;
+        public static final int btnLinearLayout4=0x7f0c0022;
+        public static final int btnLinearLayout5=0x7f0c0023;
+        public static final int btnLinearLayout6=0x7f0c0024;
+        public static final int button1=0x7f0c0001;
+        public static final int button2=0x7f0c0002;
+        public static final int button3=0x7f0c0003;
+        public static final int button4=0x7f0c0018;
+        public static final int button5=0x7f0c0019;
+        public static final int button6=0x7f0c001a;
+        public static final int button7=0x7f0c001b;
+        public static final int button8=0x7f0c001c;
+        public static final int button9=0x7f0c001d;
+        public static final int buttonAdditional=0x7f0c002e;
+        public static final int buttonEvent1=0x7f0c000b;
+        public static final int buttonReadPrefs=0x7f0c0033;
+        public static final int buttonTelMananger=0x7f0c002d;
+        public static final int buttonWifi=0x7f0c003c;
+        public static final int buttonWriteFile=0x7f0c0036;
+        public static final int buttonWritePrefs=0x7f0c0034;
+        public static final int captureFront=0x7f0c0006;
+        public static final int container=0x7f0c002b;
+        public static final int context_ab1=0x7f0c0044;
+        public static final int context_ab2=0x7f0c0045;
+        public static final int delete=0x7f0c0031;
+        public static final int editText1=0x7f0c002f;
+        public static final int editTextEvent1=0x7f0c000a;
+        public static final int editTextFile=0x7f0c0035;
+        public static final int editTextPrefs=0x7f0c0032;
+        public static final int edit_name=0x7f0c003d;
+        public static final int fragment1=0x7f0c000f;
+        public static final int fragment2=0x7f0c0010;
+        public static final int grid_view=0x7f0c001e;
+        public static final int imageView1=0x7f0c0007;
+        public static final int lbl_your_name=0x7f0c003e;
+        public static final int linearLayout1=0x7f0c0011;
+        public static final int linearLayout2=0x7f0c0013;
+        public static final int listView1=0x7f0c002a;
+        public static final int listViewContext=0x7f0c0009;
+        public static final int map=0x7f0c0016;
+        public static final int mylist=0x7f0c0025;
+        public static final int ok=0x7f0c0005;
+        public static final int progressBar1=0x7f0c0039;
+        public static final int progressBar2=0x7f0c003a;
+        public static final int spinnerExplicit=0x7f0c0027;
+        public static final int spinnerImplicit=0x7f0c0028;
+        public static final int spinnerOther=0x7f0c0029;
+        public static final int spinnerService=0x7f0c0000;
+        public static final int surfaceView1=0x7f0c0008;
+        public static final int tableRow1=0x7f0c0038;
+        public static final int textView1=0x7f0c000c;
+        public static final int textView2=0x7f0c0017;
+        public static final int textViewEvent=0x7f0c000e;
+        public static final int textViewInfo=0x7f0c002c;
+        public static final int textViewName=0x7f0c0026;
+        public static final int textViewWifi=0x7f0c003b;
+        public static final int time=0x7f0c0004;
+        public static final int tvWidgetText=0x7f0c0040;
+        public static final int txt_your_name=0x7f0c003f;
     }
     public static final class layout {
         public static final int activity_android_services=0x7f030000;
@@ -159,81 +172,95 @@ public final class R {
         public static final int activity_manager=0x7f030012;
         public static final int activity_notofication=0x7f030013;
         public static final int activity_relative_layout=0x7f030014;
-        public static final int activity_show_location=0x7f030015;
-        public static final int activity_sql_liste=0x7f030016;
-        public static final int activity_storage=0x7f030017;
-        public static final int activity_thread=0x7f030018;
-        public static final int activity_two=0x7f030019;
-        public static final int example_fragment1=0x7f03001a;
-        public static final int example_fragment2=0x7f03001b;
-        public static final int fragment_blank=0x7f03001c;
-        public static final int fragment_edit_name=0x7f03001d;
-        public static final int mywidget=0x7f03001e;
+        public static final int activity_service=0x7f030015;
+        public static final int activity_show_location=0x7f030016;
+        public static final int activity_sql_liste=0x7f030017;
+        public static final int activity_storage=0x7f030018;
+        public static final int activity_table_layout=0x7f030019;
+        public static final int activity_thread=0x7f03001a;
+        public static final int activity_two=0x7f03001b;
+        public static final int activity_wifi=0x7f03001c;
+        public static final int example_fragment1=0x7f03001d;
+        public static final int example_fragment2=0x7f03001e;
+        public static final int fragment_blank=0x7f03001f;
+        public static final int fragment_edit_name=0x7f030020;
+        public static final int fragment_service=0x7f030021;
+        public static final int fragment_wifi=0x7f030022;
+        public static final int mywidget=0x7f030023;
     }
     public static final class menu {
-        public static final int activity_two=0x7f0a0000;
-        public static final int android_services=0x7f0a0001;
-        public static final int broadcast_receiver=0x7f0a0002;
-        public static final int browser=0x7f0a0003;
-        public static final int camera=0x7f0a0004;
-        public static final int canvas=0x7f0a0005;
-        public static final int contextmenu=0x7f0a0006;
-        public static final int contextmenu1=0x7f0a0007;
-        public static final int contextual_action_bar=0x7f0a0008;
-        public static final int dialog=0x7f0a0009;
-        public static final int event=0x7f0a000a;
-        public static final int geo_location=0x7f0a000b;
-        public static final int google_map_test=0x7f0a000c;
-        public static final int grid_layout=0x7f0a000d;
-        public static final int grid_view=0x7f0a000e;
-        public static final int linear_layout=0x7f0a000f;
-        public static final int linear_layout1=0x7f0a0010;
-        public static final int list_view=0x7f0a0011;
-        public static final int main=0x7f0a0012;
-        public static final int manager=0x7f0a0013;
-        public static final int notofication=0x7f0a0014;
-        public static final int relative_layout=0x7f0a0015;
-        public static final int show_location=0x7f0a0016;
-        public static final int single_touch=0x7f0a0017;
-        public static final int sql_liste=0x7f0a0018;
-        public static final int storage=0x7f0a0019;
-        public static final int thread=0x7f0a001a;
+        public static final int activity_two=0x7f0b0000;
+        public static final int android_services=0x7f0b0001;
+        public static final int broadcast_receiver=0x7f0b0002;
+        public static final int browser=0x7f0b0003;
+        public static final int camera=0x7f0b0004;
+        public static final int canvas=0x7f0b0005;
+        public static final int contextmenu=0x7f0b0006;
+        public static final int contextmenu1=0x7f0b0007;
+        public static final int contextual_action_bar=0x7f0b0008;
+        public static final int dialog=0x7f0b0009;
+        public static final int event=0x7f0b000a;
+        public static final int geo_location=0x7f0b000b;
+        public static final int google_map_test=0x7f0b000c;
+        public static final int grid_layout=0x7f0b000d;
+        public static final int grid_view=0x7f0b000e;
+        public static final int linear_layout=0x7f0b000f;
+        public static final int linear_layout1=0x7f0b0010;
+        public static final int list_view=0x7f0b0011;
+        public static final int main=0x7f0b0012;
+        public static final int manager=0x7f0b0013;
+        public static final int notofication=0x7f0b0014;
+        public static final int relative_layout=0x7f0b0015;
+        public static final int show_location=0x7f0b0016;
+        public static final int single_touch=0x7f0b0017;
+        public static final int sql_liste=0x7f0b0018;
+        public static final int storage=0x7f0b0019;
+        public static final int table_layout=0x7f0b001a;
+        public static final int thread=0x7f0b001b;
+        public static final int wifi=0x7f0b001c;
+    }
+    public static final class raw {
+        public static final int heal=0x7f050000;
+        public static final int synziemi=0x7f050001;
     }
     public static final class string {
-        public static final int action_settings=0x7f070001;
-        public static final int app_name=0x7f070000;
-        public static final int callexplicit=0x7f070015;
-        public static final int hello_blank_fragment=0x7f07000c;
-        public static final int hello_world=0x7f070002;
-        public static final int permdesc_deadlyActivity=0x7f07000f;
-        public static final int permlab_deadlyActivity=0x7f07000e;
-        public static final int title_activity_activity_three=0x7f070004;
-        public static final int title_activity_activity_two=0x7f070003;
-        public static final int title_activity_android_services=0x7f070012;
-        public static final int title_activity_broadcast_receiver=0x7f07001c;
-        public static final int title_activity_browser=0x7f070005;
-        public static final int title_activity_camera=0x7f07001e;
-        public static final int title_activity_canvas=0x7f070014;
-        public static final int title_activity_contextual_action_bar=0x7f07001b;
-        public static final int title_activity_dialog=0x7f07000b;
-        public static final int title_activity_event=0x7f07000a;
-        public static final int title_activity_fragment=0x7f07000d;
-        public static final int title_activity_geo_location=0x7f070018;
-        public static final int title_activity_google_map_test=0x7f070019;
-        public static final int title_activity_grid_layout=0x7f070008;
-        public static final int title_activity_grid_view=0x7f07001a;
-        public static final int title_activity_linear_layout=0x7f070007;
-        public static final int title_activity_linear_layout1=0x7f070020;
-        public static final int title_activity_list_view=0x7f070006;
-        public static final int title_activity_manager=0x7f070017;
-        public static final int title_activity_notofication=0x7f07001d;
-        public static final int title_activity_preference=0x7f070011;
-        public static final int title_activity_relative_layout=0x7f070009;
-        public static final int title_activity_show_location=0x7f070021;
-        public static final int title_activity_single_touch=0x7f07001f;
-        public static final int title_activity_sql_liste=0x7f070016;
-        public static final int title_activity_storage=0x7f070010;
-        public static final int title_activity_thread=0x7f070013;
+        public static final int action_settings=0x7f080001;
+        public static final int app_name=0x7f080000;
+        public static final int callexplicit=0x7f080015;
+        public static final int hello_blank_fragment=0x7f08000c;
+        public static final int hello_world=0x7f080002;
+        public static final int permdesc_deadlyActivity=0x7f08000f;
+        public static final int permlab_deadlyActivity=0x7f08000e;
+        public static final int title_activity_activity_three=0x7f080004;
+        public static final int title_activity_activity_two=0x7f080003;
+        public static final int title_activity_android_services=0x7f080012;
+        public static final int title_activity_broadcast_receiver=0x7f08001c;
+        public static final int title_activity_browser=0x7f080005;
+        public static final int title_activity_camera=0x7f08001e;
+        public static final int title_activity_canvas=0x7f080014;
+        public static final int title_activity_contextual_action_bar=0x7f08001b;
+        public static final int title_activity_dialog=0x7f08000b;
+        public static final int title_activity_event=0x7f08000a;
+        public static final int title_activity_fragment=0x7f08000d;
+        public static final int title_activity_geo_location=0x7f080018;
+        public static final int title_activity_google_map_test=0x7f080019;
+        public static final int title_activity_grid_layout=0x7f080008;
+        public static final int title_activity_grid_view=0x7f08001a;
+        public static final int title_activity_linear_layout=0x7f080007;
+        public static final int title_activity_linear_layout1=0x7f080020;
+        public static final int title_activity_list_view=0x7f080006;
+        public static final int title_activity_manager=0x7f080017;
+        public static final int title_activity_notofication=0x7f08001d;
+        public static final int title_activity_preference=0x7f080011;
+        public static final int title_activity_relative_layout=0x7f080009;
+        public static final int title_activity_service=0x7f080023;
+        public static final int title_activity_show_location=0x7f080021;
+        public static final int title_activity_single_touch=0x7f08001f;
+        public static final int title_activity_sql_liste=0x7f080016;
+        public static final int title_activity_storage=0x7f080010;
+        public static final int title_activity_table_layout=0x7f080022;
+        public static final int title_activity_thread=0x7f080013;
+        public static final int title_activity_wifi=0x7f080024;
     }
     public static final class style {
         /** 
@@ -257,11 +284,12 @@ public final class R {
     
  API 14 theme customizations can go here. 
          */
-        public static final int AppBaseTheme=0x7f080000;
+        public static final int AppBaseTheme=0x7f090000;
         /**  Application theme. 
  All customizations that are NOT specific to a particular API-level can go here. 
          */
-        public static final int AppTheme=0x7f080001;
+        public static final int AppTheme=0x7f090001;
+        public static final int ButtonStyle=0x7f090002;
     }
     public static final class xml {
         public static final int preferences=0x7f040000;
