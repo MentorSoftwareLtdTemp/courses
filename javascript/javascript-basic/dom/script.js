@@ -2,7 +2,8 @@ var capture = false;
 
 function propagation()
 {
-    return document.getElementById('stopPropagation').checked;
+    return document.getElementById('stopPropagation').
+        checked;
 
 }
 function clickDoc(e)
