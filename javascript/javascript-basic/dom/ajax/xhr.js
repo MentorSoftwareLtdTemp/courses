@@ -9,9 +9,15 @@ function request(url, callback) {
 	xhr.send('');
 }
 
-request('content.txt', function(o) {
-	document.getElementById('text').innerHTML = o.responseText;
-});
+document.getElementById('btn1').addEventListener('click',
+function()
+{
+    request('content.txt', function(o) {
+        document.getElementById('text').innerHTML = o.responseText;
+    });
+
+}, false);
+
 
 request('content.html', function(o) {
 	document.getElementById('html').innerHTML = o.responseText;
