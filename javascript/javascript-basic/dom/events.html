@@ -1,0 +1,26 @@
+<!DOCTYPE html>
+<html>
+<head lang="en">
+    <meta charset="UTF-8">
+    <title></title>
+</head>
+<body>
+<div id="mydiv1" style="border: dotted;">
+    <p id="myp1">Click me</p>
+</div>
+<a href="events.html">Home</a>
+
+<div id="mydiv2" style="border: double;">
+    <p id="mymessage1"></p>
+
+</div>
+<input id="bubble" type="radio" name="bubblecapture" value="bubble">Bubble<br>
+<input id="capture" type="radio" name="bubblecapture" value="capture">Capture<br>
+<input type="checkbox" checked="checked" name="propagation" id="stopPropagation" value="true">Propagation</input><br>
+
+<button id="btn1" onclick="addlistener();">Add listeners</button>
+<button id="btn2" onclick="removelistener();">Remove listener</button>
+
+<script type="text/javascript" src="script.js"></script>
+</body>
+</html>

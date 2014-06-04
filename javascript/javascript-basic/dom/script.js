@@ -1,28 +1,78 @@
-var timeoutID;
+var capture = false;
 
-function delayedAlert() {
-    timeoutID = window.setTimeout(slowAlert, 20);
+function propagation()
+{
+    return document.getElementById('stopPropagation').checked;
+
+}
+function clickDoc(e)
+{
+    if (!propagation())
+        e.stopPropagation();
+    setMessage("Document clicked ");
+
+    console.log("Doc",e);
+
 }
 
-function slowAlert() {
-    alert("That was really slow!");
+function clickDiv(e)
+{
+    if (!propagation())
+        e.stopPropagation();
+
+    setMessage("Div clicked");
+    console.log("DIV",e);
 }
 
-function clearAlert() {
-    window.clearTimeout(timeoutID);
+function clickP(e)
+{
+    if (!propagation())
+        e.stopPropagation();
+
+    setMessage("p clicked");
+    console.log("P",e);
+
 }
 
-var nIntervId;
 
-function changeColor() {
-    nIntervId = setInterval(flashText, 500);
+
+function setMessage( text)
+{
+    var mess = document.getElementById("mymessage1");
+    mess.innerHTML=mess.innerHTML + "<br/>" + text;
+
 }
 
-function flashText() {
-    var oElem = document.getElementById("my_box");
-    oElem.style.color = oElem.style.color == "red" ? "blue" : "red";
+function cleanMessage()
+{
+    var mess = document.getElementById("mymessage1");
+    mess.innerHTML="";
+
 }
 
-function stopTextColor() {
-    clearInterval(nIntervId);
+function addlistener()
+{
+    messagges = [];
+    licznik=0;
+    removelistener();
+    if (document.getElementById('capture').checked)
+        capture = true;
+    else
+        capture = false;
+    console.log(stopPropagation, capture);
+    document.addEventListener('click',clickDoc , capture);
+    document.getElementById("mydiv1").addEventListener('click',clickDiv, capture);
+    document.getElementById("myp1").addEventListener('click',clickP, capture);
 }
+
+function removelistener()
+{
+    document.removeEventListener('click',clickDoc,capture);
+    document.getElementById("mydiv1").removeEventListener('click',clickDiv, capture);
+    document.getElementById("myp1").removeEventListener('click',clickP, capture);
+    cleanMessage();
+
+}
+
+
+
