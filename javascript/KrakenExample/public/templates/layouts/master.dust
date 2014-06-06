@@ -11,12 +11,7 @@
     <!-- SB Admin CSS - Include with every page -->
 
     <link rel="stylesheet" href="components/bootstrap/css/bootstrap.css" />
-<!--    <link rel="stylesheet" href="components/bootstrap/css/bootswatch.min.css" />-->
-
     <link rel="stylesheet" href="components/font-awesome/css/font-awesome.min.css">
-    <link href="//www.fuelcdn.com/fuelux/2.5.2/css/fuelux.min.css" rel="stylesheet" type="text/css">
-    <link href="//www.fuelcdn.com/fuelux/2.5.2/css/fuelux-responsive.css" rel="stylesheet" type="text/css">
-    <!--<link href="css/sb-admin.css" rel="stylesheet">-->
     <link rel="stylesheet" href="css/app.css" />
 
     <script data-main="js/main.js" src="js/lib/requirejs/require.js"></script>

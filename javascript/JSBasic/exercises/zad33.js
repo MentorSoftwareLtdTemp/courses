@@ -1,4 +1,0 @@
-function removeListener(el)
-{
-
-}
