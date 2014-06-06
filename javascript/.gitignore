@@ -29,3 +29,5 @@ node_modules
 
 # Users Environment Variables
 .lock-wscript
+#courses subdirs are copied by grunt
+angularapp/public/assets
