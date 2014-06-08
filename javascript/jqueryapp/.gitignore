@@ -1,7 +1,6 @@
-angular-phonecat
-angularapp/bin
+bin
 .idea
-# Logs
+i# Logs
 logs
 *.log
 
@@ -29,8 +28,3 @@ node_modules
 
 # Users Environment Variables
 .lock-wscript
-#courses subdirs are copied by grunt
-angularapp/public/assets
-spineapp/public/assets
-backboneapp/public/assets
-jqueryapp/public/assets
