@@ -1,10 +1,22 @@
+<!--Angular template -->
 <!DOCTYPE html>
-<html>
-    <%include layout/head%>
-  <body>
+<html ng-app>
+<%include layout/head%>   <!-- EJS include -->
+
+  <!-- Body tag augmented with ngController directive  -->
+<body ng-controller="MainController">
+  <%include layout/nav%> <!-- EJS include -->
+
+  <header id="head" class="secondary"></header>
+
+  <div class="container">
+    <!-- EJS Tags-->
     <h1><%= title %></h1>
     <p>Welcome to <%= title %></p>
-  </body>
+    <!-- END EJS Tags-->
+    {title}
+  </div>
+</body>
 
-<%include layout/foot%>
+<%include layout/foot%> <!-- EJS include -->
 </html>
