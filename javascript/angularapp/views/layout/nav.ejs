@@ -1,0 +1,36 @@
+<div ng-controller="NavCtrl">
+    <!-- Fixed navbar -->
+    <div class="navbar navbar-inverse navbar-fixed-top">
+        <div class="container">
+            <div class="navbar-header">
+                <!-- Button for smallest screens -->
+                <button type="button" class="navbar-toggle" data-toggle="collapse" data-target=".navbar-collapse"><span
+                            class="icon-bar"></span> <span class="icon-bar"></span> <span class="icon-bar"></span></button>
+                <a class="navbar-brand" href="#!/"><img height="40px" src="assets/images/MainLogoWhite.png"
+                                                        alt="Mentor Software Logo"></a>
+            </div>
+            <div class="navbar-collapse collapse">
+                <ul class="nav navbar-nav pull-right">
+                    <li id="liHome" ng-class="{ active: isActive('/')}"><a href="#!/">Home</a></li>
+
+
+                    <li ng-class="{ active: isActive(['/services/dev','/services/consulting','/services/dev'])}" id="liServices" class="dropdown">
+                        <a href="" class="dropdown-toggle" data-toggle="dropdown">Services <b class="caret"></b></a>
+                        <ul class="dropdown-menu">
+                            <li ng-class="{ active: isActive('/services/dev')}"><a href="#!/services/dev">Development</a></li>
+                            <li ng-class="{ active: isActive('/services/consulting')}"><a href="#!/services/consulting">Consulting</a></li>
+                            <li ng-class="{ active: isActive('/services/courses')}"><a href="#!/services/courses">Courses</a></li>
+                        </ul>
+                    </li>
+
+                    <li ng-class="{ active: isActive('/tech')}"><a href="#!/tech">Technologies</a></li>
+
+                    <li ng-class="{ active: isActive('/about')}"><a href="#!/about">About</a></li>
+                    <li ng-class="{ active: isActive('/contact')}"><a href="#!/contact">Contact</a></li>
+                </ul>
+            </div>
+            <!--/.nav-collapse -->
+        </div>
+    </div>
+    <!-- /.navbar -->
+</div>
