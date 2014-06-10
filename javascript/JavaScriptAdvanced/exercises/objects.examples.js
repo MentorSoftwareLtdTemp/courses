@@ -1,5 +1,4 @@
 //1)Dodaj odpowiedni kod aby ponizszy kod dzialal
-
 console.log(person1.firstName); //'Arkadiusz';
 console.log(person1.lastName); //Ar;
 person1.print();    //firstName Arkadiusz lastName Ar
@@ -28,7 +27,6 @@ person2_3.print();  //First name: Anna, Second name: Nowak
 //4)
 function F1()
 {
-
     this.a = 10;
 }
 

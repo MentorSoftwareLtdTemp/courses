@@ -38,7 +38,8 @@ console.log(bar);
 var foo = 10;
 
 function bar() {
-    (function baz() {});
+    (function baz() {
+    });
 
     console.log(
             this.foo == foo,
@@ -46,8 +47,7 @@ function bar() {
     );
 
     console.log(baz);
-
-
+}
 
 
 

@@ -23,7 +23,7 @@ var a = 1;
 function f() {
     var a = 2;
     function n() {
-        alert(a);
+        console.log(a);
     }
     n();
 }
