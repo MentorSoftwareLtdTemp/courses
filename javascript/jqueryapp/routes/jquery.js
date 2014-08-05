@@ -1,10 +1,19 @@
 var express = require('express');
 var router = express.Router();
 
-/* GET home page. */
+/* GET /jquery */
 router.get('/', function(req, res) {
   res.render('jquery', { title: 'Express' });
 });
+// /jquery/ala
+router.get('/ala', function(req, res) {
+    res.render('jquery', { title: 'Express' });
+});
+
+
+
+
+
 
 function jsonData(request, response)
 {

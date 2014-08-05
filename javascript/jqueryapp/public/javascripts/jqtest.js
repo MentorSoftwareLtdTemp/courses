@@ -1,4 +1,7 @@
 jQuery(document).ready(function() {
+
+
+
     $('#btnHide').click(function(e)
     {
         $('p').toggle(1000);
