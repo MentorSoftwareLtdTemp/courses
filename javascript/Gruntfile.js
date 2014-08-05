@@ -6,7 +6,7 @@ module.exports = function(grunt) {
                     { cwd: 'assets', src: ['**/*'], dest: 'angularapp/public/assets/' },
                     { cwd: 'assets', src: ['**/*'], dest: 'backboneapp/public/assets/' },
                     { cwd: 'assets', src: ['**/*'], dest: 'spineapp/public/assets/' },
-                    { cwd: 'assets', src: ['**/*'], dest: 'jqueyapp/public/assets/' }
+                    { cwd: 'assets', src: ['**/*'], dest: 'jqueryapp/public/assets/' }
                 ],
                 options: {
                 }

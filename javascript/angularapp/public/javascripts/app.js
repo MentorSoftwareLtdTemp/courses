@@ -1,40 +1,16 @@
-/**
- * Created by mdylag on 07/06/2014.
- * Angular controllers, services, model
- */
-/*Angular module*/
-var myApp = angular.module('angularApp',[]);
+define([
+        'angular',
+    './services/index',
 
-
-/** Angular main controller */
-myApp.controller('MainController', ['$scope', function($scope) {
-    $scope.name = 'Main!';
-}]);
-
-/** Nested controller*/
-myApp.controller('NavController', ['$scope', function($scope) {
-    $scope.name = 'Main!';
-}]);
-
-
-/** Angular service */
-myApp.service( 'Book', [ '$rootScope', function( $rootScope ) {
-      var service = {
-             people: [
-               { firstNmae: "Jan", lastName: "Kowalski" },
-               { firstNmae: "Alicja", lastName: "Kowalska" }
-             ],
-
-         addPerson: function ( book ) {
-               service.books.push( book );
-               $rootScope.$broadcast( 'books.update' );
-             }
-       }
-
-       return service;
- }]);
-
-
-
-/** Angular routes */
-
+    './controllers/index',
+        './directives/index',
+        './filters/index'
+], function (ng) {
+        'use strict';
+         return ng.module('app', [
+             'app.services',
+             'app.controllers',
+             'app.filters',
+             'app.directives'
+         ]);
+     });
