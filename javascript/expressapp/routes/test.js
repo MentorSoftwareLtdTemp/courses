@@ -6,5 +6,16 @@ router.get('/', function(req, res) {
         { title: 'Express',
           name : 'Name' });
 });
+router.post('/', function(req, res) {
+
+    res.format({
+        json: function () {
+            res.json({ title: 'Express',
+                name : 'Name' });
+        }
+
+    });
+});
+
 
 module.exports = router;

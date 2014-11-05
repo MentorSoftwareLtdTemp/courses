@@ -1,7 +1,6 @@
 define([
         'angular',
     './services/index',
-
     './controllers/index',
         './directives/index',
         './filters/index'

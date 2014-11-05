@@ -13,6 +13,8 @@
     "body-parser": "~1.0.0",
     "debug": "~0.7.4",
     "ejs": "~0.8.5",
-    "mocha": "~1.20.1"
+    "mocha": "~1.20.1",
+    "lusca": "~1.0.1",
+    "express-session": "~1.6.1"
   }
 }

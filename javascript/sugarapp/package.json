@@ -2,6 +2,6 @@
   "name": "sugarapp",
   "version": "0.0.1",
   "dependencies": {
-
+    "sugar": "~1.4.1"
   }
 }

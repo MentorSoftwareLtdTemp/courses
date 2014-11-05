@@ -1,0 +1,1 @@
+http://solutionoptimist.com/2013/09/30/requirejs-angularjs-dependency-injection/

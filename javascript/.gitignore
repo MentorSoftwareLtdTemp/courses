@@ -33,6 +33,6 @@ node_modules
 angularapp/public/assets
 spineapp/public/assets
 backboneapp/public/assets
-jqueryapp/public/assets
+#jqueryapp/public/assets
 bower_components
 vendor

@@ -4,7 +4,7 @@ require.config({
         angular: '../bower_components/angular/angular',
         'angularResource': '../bower_components/angular/angular-resources',
         domReady: '../bower_components/requirejs-domready/domReady',
-        jquery : '../bower_components/jquery/dist/jquery',
+        jquery : '../bower_components/jquery/dist/jquery'
     },
     shim: {
         'angular' : {'exports' : 'angular'}

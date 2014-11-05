@@ -1,3 +1,8 @@
-/**
- * Created by mdylag on 16/06/2014.
- */
+define(['./module'], function (controllers) {
+    'use strict';
+    controllers.controller('MainController', ['$scope',function ($scope) {
+        $scope.message="Ala";
+
+    }]);
+});
+

@@ -1,5 +1,5 @@
 {
-      "name": "AngularJS + RequireJS Example",
+   "name": "AngularJS + RequireJS Example",
    "version": "0.1",
    "main": "index.html",
    "ignore": [
@@ -8,7 +8,13 @@
    ],
    "dependencies": {
      "angular": "latest",
+     "angular-resource": "latest",
+     "angular-route": "latest",
      "requirejs": "latest",
-     "requirejs-domready": "latest"
+     "requirejs-domready": "latest",
+     "bootstrap": "latest",
+     "font-awesome": "latest",
+     "jquery": "1.11.1"
+
    }
 }

@@ -1,3 +1,8 @@
-/**
- * Created by mdylag on 16/06/2014.
- */
+define(['./module'], function (directives) {
+    'use strict';
+    directives.directive('appVersion', ['version', function (version) {
+        return function (scope, elm) {
+            elm.text(version);
+        };
+    }]);
+});

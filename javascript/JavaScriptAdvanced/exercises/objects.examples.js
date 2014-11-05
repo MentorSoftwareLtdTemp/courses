@@ -24,25 +24,3 @@ person2_3.print();  //First name: Anna, Second name: Nowak
 // Rectangle: a,b
 
 
-//4)
-function F1()
-{
-    this.a = 10;
-}
-
-//a) Gdzie zostanie utworzone a (zmienna/wlasciwosc) w jakim kontekscie ?
-var vf1 = new F();
-F1();
-
-
-//5) j/w ?
-function F1()
-{
-    this.a = 10;
-}
-
-function F2()
-{
-    F1();
-};
-F2();

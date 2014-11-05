@@ -3,8 +3,31 @@
 <head lang="en">
     <meta charset="UTF-8">
     <title></title>
+    <script src="../bower_components/angular/angular.min.js"></script>
+    <script src="../bower_components/angular-route/angular-route.min.js"></script>
+
 </head>
 <body>
+<div ng-controller="Ctrl">
+<select ng-model="selection" ng-options="item for item in items">
+</select>
+<tt>selection={{selection}}</tt>
+<hr/>
+<div class="animate-switch-container"
+     ng-switch on="selection">
+    <div class="animate-switch" ng-switch-when="settings">Settings Div</div>
+    <div class="animate-switch" ng-switch-when="home">Home Span</div>
+    <div class="animate-switch" ng-switch-default>default</div>
+</div>
+</div>
 
+<script>
+
+    function Ctrl($scope) {
+        $scope.items = ['settings', 'home', 'other'];
+        $scope.selection = $scope.items[0];
+    }
+
+</script>
 </body>
 </html>

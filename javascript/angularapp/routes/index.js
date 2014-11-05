@@ -13,7 +13,7 @@ router.get('/', function (req, res) {
             }
 
         },
-        title: 'Angular tutorial'
+        title: 'JavaScript examples for Angular'
     };
 
     res.render('index', obj);

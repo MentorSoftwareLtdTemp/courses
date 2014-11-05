@@ -1,3 +1,1 @@
-/**
- * Created by mdylag on 16/06/2014.
- */
+define(['./app-version'], function () {});

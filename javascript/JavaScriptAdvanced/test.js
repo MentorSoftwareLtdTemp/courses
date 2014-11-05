@@ -1,16 +1,22 @@
-var data = [];
+var bar = 10;
+var foo = function() {
+    var boo = function() {
+        var bar = 2;
 
-for (var k = 0; k < 3; k++) {
-    function f(x)
-    {
-        return function() {
-            console.log(x);
-        }
-    }
-    data[k] = f(k);
+    }();
+}();
+console.log(bar);
+
+var foo = 10;
+
+function bar() {
+    (function baz() {
+    });
+
+    console.log(
+            this.foo == foo,
+            window.bar == bar
+    );
+
+    console.log(baz);
 }
-console.log(k);
-//ponizszy kod wyswietlal wartosc indeksu
-data[0](); // 1
-data[1](); // 2
-data[2](); // 3

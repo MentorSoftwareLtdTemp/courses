@@ -18,7 +18,7 @@ var person = new Object();
 setName(person);
 console.log(person.name);
 
-//3) Co wyswietli funkcja alert
+//3) Co wyswietli funkcja n
 var a = 1;
 function f() {
     var a = 2;

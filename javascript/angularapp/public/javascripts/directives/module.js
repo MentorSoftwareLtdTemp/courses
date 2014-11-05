@@ -1,3 +1,4 @@
-/**
- * Created by mdylag on 16/06/2014.
- */
+define(['angular'], function (ng) {
+    'use strict';
+    return ng.module('app.directives', []);
+});

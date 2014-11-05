@@ -35,11 +35,11 @@ var foo = function() {
 }();
 console.log(bar);
 
-var foo = 10;
 
+//5)
 function bar() {
-    (function baz() {
-    });
+    function baz() {
+    };
 
     console.log(
             this.foo == foo,
@@ -48,7 +48,7 @@ function bar() {
 
     console.log(baz);
 }
-
+bar();
 
 
 

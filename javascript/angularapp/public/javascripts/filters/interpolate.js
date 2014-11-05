@@ -1,3 +1,9 @@
-/**
- * Created by mdylag on 16/06/2014.
- */
+define(['./module'], function (filters) {
+    'use strict';
+
+    return filters.filter('interpolate', ['version', function (version) {
+        return function (text) {
+            return String(text).replace(/\%VERSION\%/mg, version);
+        }
+    }]);
+});
