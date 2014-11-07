@@ -13,10 +13,10 @@ router.get('/', function(req, res) {
   res.render('index', { title: 'Express' });
 });
 
-//add
+/*
 router.get('/add', function(req, res) {
   res.render('add', { title: 'Express' });
-});
+});*/
 
 router.post('/persons', function(req, res) {
 

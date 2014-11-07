@@ -1,0 +1,19 @@
+
+
+    <h4>Add a new person</h4>
+    <div class="row">
+        <form novalidate class="simple-form" name="form">
+      <span class="help-block"
+            ng-show="form.firstName.$dirty && form.firstName.$invalid
+            && form.firstName.$error.required">
+						    First name is required
+      </span>
+            First name: <input type="text" ng-model="person.firstName" name="firstName" required/><br />
+            Last name: <input type="text" ng-model="person.lastName" required/><br />
+            <button class="btn btn-success" ng-click="addPerson(person);"
+                    ng-disabled="form.$invalid">Add</button>
+        </form>
+        <pre>form = {{person | json}}</pre>
+    </div>
+
+
